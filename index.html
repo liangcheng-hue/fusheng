@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>肌肤所生 Skinborn · 品牌全案策略</title>
+<title>FUFUSCENT 肤浮 · 品牌全案策略</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+SC:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -18,7 +18,6 @@
     background:var(--bg); color:var(--ink); line-height:1.9; font-size:15.5px;
     -webkit-font-smoothing:antialiased;
   }
-
   .top-nav {
     position:fixed; top:0; left:0; right:0; z-index:200;
     background:rgba(249,248,246,0.88); backdrop-filter:blur(16px);
@@ -33,27 +32,18 @@
   .nav-links { display:flex; gap:1.5rem; list-style:none; font-family:"Inter","Noto Serif SC",sans-serif; font-size:0.72rem; letter-spacing:0.08em; }
   .nav-links a { color:var(--ink-light); text-decoration:none; transition:color 0.2s; }
   .nav-links a:hover { color:var(--ink); }
-
   .hero {
     min-height:100vh; display:flex; align-items:center; justify-content:center;
     text-align:center; padding:6rem 2rem 4rem; position:relative; overflow:hidden;
   }
-  .hero-bg {
-    position:absolute; inset:0; pointer-events:none;
-    background:radial-gradient(ellipse 80% 60% at 30% 45%, rgba(210,200,188,0.15) 0%, transparent 55%),
-               radial-gradient(ellipse 60% 50% at 70% 50%, rgba(195,188,178,0.08) 0%, transparent 50%),
-               linear-gradient(180deg, #FCFAF7 0%, #F7F4EF 60%, #F4F0EA 100%);
-  }
-  .hero-inner { position:relative; z-index:1; max-width:700px; }
+  .hero-inner { position:relative; z-index:1; max-width:700px; background:rgba(255,255,255,0.5); backdrop-filter:blur(2px); padding:3rem 2rem; border-radius:4px; }
   .hero-rule { width:40px; height:1px; background:var(--accent); margin:0 auto 3rem; }
   .hero-eyebrow { font-family:"Inter",sans-serif; font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--ink-light); margin-bottom:2.5rem; }
-  .hero h1 { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:clamp(3.5rem,8vw,6rem); font-weight:300; letter-spacing:0.06em; line-height:1.1; margin-bottom:0.4rem; }
+  .hero h1 { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:clamp(3rem,7vw,5.5rem); font-weight:300; letter-spacing:0.06em; line-height:1.1; margin-bottom:0.3rem; }
   .hero .sub { font-size:0.9rem; color:var(--ink-soft); letter-spacing:0.12em; margin-bottom:2.5rem; }
   .hero .tagline { display:inline-block; font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic; font-size:1.2rem; color:var(--ink); letter-spacing:0.05em; padding:1.2rem 0; border-top:1px solid var(--accent-soft); border-bottom:1px solid var(--accent-soft); }
   .hero .meta { margin-top:2.5rem; font-family:"Inter",sans-serif; font-size:0.7rem; color:var(--ink-light); letter-spacing:0.1em; }
-
   .content { max-width:740px; margin:0 auto; padding:2rem 2rem 6rem; }
-
   .page { margin-bottom:7rem; padding-top:1rem; }
   .page-num { font-family:"Inter",sans-serif; font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem; }
   .page h2 { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:2.3rem; font-weight:300; letter-spacing:0.03em; margin-bottom:1.75rem; line-height:1.25; }
@@ -62,45 +52,36 @@
   .page p { margin-bottom:0.9rem; color:var(--ink-soft); }
   .page p strong { color:var(--ink); font-weight:500; }
   .page em { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic; color:var(--ink-light); font-size:0.9rem; }
-
   .conclusion-bar { background:var(--ink); color:#F9F8F6; padding:1rem 1.5rem; margin-bottom:2rem; font-weight:500; font-size:0.95rem; letter-spacing:0.03em; }
   .conclusion-bar-light { background:var(--wash); padding:1rem 1.5rem; margin-bottom:2rem; font-weight:500; font-size:0.95rem; border-left:3px solid var(--accent); }
-
   .highlight { background:var(--warm); padding:2rem; margin:1.5rem 0; border-left:2px solid var(--accent); }
   .highlight-green { border-left-color:#9BAFA0; background:#F5F8F4; }
   .highlight-warn { border-left-color:#C4A86A; background:#FDFAF4; }
-
   .card { background:var(--surface); padding:1.75rem; margin:1.5rem 0; border:1px solid var(--rule); }
   .card h4 { margin-top:0; }
   .card-accent { background:var(--wash); padding:1.75rem; margin:1.5rem 0; border:1px solid var(--rule); }
-
   .table-wrap { overflow-x:auto; margin:1.5rem 0; }
   table { width:100%; border-collapse:collapse; font-size:0.84rem; font-family:"Inter","Noto Serif SC",sans-serif; }
   th { font-weight:500; text-align:left; padding:0.55rem 0.9rem; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-light); border-bottom:2px solid var(--ink); }
   td { padding:0.55rem 0.9rem; border-bottom:1px solid var(--rule); color:var(--ink-soft); vertical-align:top; }
   tr:last-child td { border-bottom:none; }
   td strong { color:var(--ink); }
-
   pre { background:var(--surface); padding:1.5rem; margin:1.5rem 0; overflow-x:auto; font-size:0.76rem; line-height:1.7; border:1px solid var(--rule); font-family:"SF Mono","Cascadia Code","Consolas",monospace; color:var(--ink-soft); }
-
   .pull-quote { margin:2.5rem 0; padding:2rem 0; text-align:center; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
   .pull-quote p { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:1.4rem; font-weight:300; font-style:italic; line-height:1.5; color:var(--ink); }
   .pull-quote .attr { font-family:"Inter",sans-serif; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-light); margin-top:0.8rem; }
-
   .product-card { background:var(--surface); border:1px solid var(--rule); padding:2rem; margin:2rem 0; }
   .product-card h3 { margin-top:0; font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:1.6rem; font-weight:300; }
   .product-card .scene { font-size:0.9rem; color:var(--ink-light); margin-bottom:1.25rem; }
   .product-card .scent-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin:1rem 0; }
   @media(max-width:600px) { .product-card .scent-row { grid-template-columns:1fr; } }
-
   .stars { color:#B8A070; letter-spacing:0.04em; white-space:nowrap; }
-
   .section-line { display:flex; align-items:center; gap:1.5rem; margin:4rem 0 3rem; }
   .section-line::before, .section-line::after { content:''; flex:1; height:1px; background:var(--rule); }
   .section-line span { font-family:"Inter",sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-light); white-space:nowrap; }
-
   .site-footer { text-align:center; padding:3rem 2rem; color:var(--ink-light); font-family:"Inter",sans-serif; font-size:0.7rem; letter-spacing:0.08em; border-top:1px solid var(--rule); }
-
+  .story-block { background:var(--wash); padding:2rem; margin:1.5rem 0; border:1px solid var(--rule); line-height:2; }
+  .note-sm { font-size:0.82rem; color:var(--ink-light); letter-spacing:0.03em; margin:0.5rem 0 0; }
   @media(max-width:700px) {
     .nav-links { display:none; }
     .hero h1 { font-size:2.5rem; }
@@ -121,7 +102,7 @@
 
 <nav class="top-nav">
   <div class="nav-inner">
-    <a href="#" class="nav-brand">肌肤所生 Skinborn<span>Brand Strategy</span></a>
+    <a href="#" class="nav-brand">FUFUSCENT 肤浮<span>Brand Strategy</span></a>
     <ul class="nav-links">
       <li><a href="#p1">核心摘要</a></li>
       <li><a href="#p2">品牌定位</a></li>
@@ -135,140 +116,146 @@
 </nav>
 
 <section class="hero" style="background:linear-gradient(0deg,rgba(249,248,246,0.45) 0%,rgba(249,248,246,0.2) 50%,rgba(249,248,246,0.05) 100%),url('images/hero-kv.jpg') center/cover no-repeat;">
-  <div class="hero-inner" style="background:rgba(255,255,255,0.5);backdrop-filter:blur(2px);padding:3rem 2rem;border-radius:4px;">
+  <div class="hero-inner">
     <div class="hero-rule"></div>
-    <p class="hero-eyebrow">Brand Strategy Blueprint</p>
-    <h1>肌肤所生</h1>
-    <p class="sub">S K I N B O R N</p>
-    <p class="tagline">"肤香天生，无需刻意。"</p>
+    <p class="hero-eyebrow">Breathing Skin Scent · Proposal</p>
+    <h1>FUFUSCENT</h1>
+    <p class="sub">肤 浮</p>
+    <p class="tagline">"香生肌理，轻浮于肤。"</p>
     <p class="meta">二〇二六年六月 · 品牌全案策略</p>
   </div>
 </section>
 
 <div class="content">
 
-<!-- ═══════════ 第1页：项目核心摘要 ═══════════ -->
+<!-- ═══════════ P1 项目核心摘要 ═══════════ -->
 <article class="page" id="p1">
   <span class="page-num">Page 01</span>
   <h2>项目核心摘要</h2>
-
-  <div class="conclusion-bar">肌肤所生 Skinborn —— 原生肤感香氛品牌。像皮肤自己透出来的原生体香，半米外像没喷，贴身闻清润自然。</div>
+  <div class="conclusion-bar">FUFUSCENT 肤浮 · 呼吸感伪体香 —— 国内首个主打「肤浮式伪体香」的轻感香氛品牌。我们卖的不是香水，是少女肌肤在不同状态下，随呼吸自然透出的原生体香。</div>
 
   <div class="table-wrap"><table>
     <tr><th style="width:22%">维度</th><th>结论</th></tr>
-    <tr><td><strong>赛道选择</strong></td><td>切入200–300元「原生肤香」垂直赛道。50–150元平价伪体香个护已是红海；200–400元区间尚无品牌独占"无香水感原生体香"心智。</td></tr>
-    <tr><td><strong>品牌定位</strong></td><td>品类占位型。心智占位：像皮肤自己透出来的原生体香。英文名 Skinborn（肌肤所生）。品牌级 slogan：肤香天生，无需刻意。</td></tr>
-    <tr><td><strong>首发产品</strong></td><td>三款香水，共享统一贴肤香基，全系列达标"伪体香金标准"。正装 200–300 元，试香装 9.9 元。</td></tr>
-    <tr><td><strong>目标用户</strong></td><td>20–26 岁一二线城市精致女性，月可支配收入 3000–8000 元。购买动机：自我愉悦 ＞ 社交细节加分 ＞ 异性好感。</td></tr>
-    <tr><td><strong>冷启动</strong></td><td>小红书为核心阵地。"约会伪体香"承接搜索流量 → 逐步传递"原生肤香"品牌内核。内容比例：70% 场景种草 + 30% 品牌心智。</td></tr>
+    <tr><td><strong>赛道选择</strong></td><td>切入 200–300 元「肤浮式伪体香」垂直赛道，以「肌肤一日三态」的细腻叙事区别于市面同质化伪体香产品。</td></tr>
+    <tr><td><strong>品牌定位</strong></td><td>品类占位型。心智占位：像皮肤呼吸一样，自然浮出来的淡香。英文名 FUFUSCENT（FUFU = 肌肤轻呼吸的软感节奏 + SCENT = 肌理透出的原生香气）。中文「肤浮」：香生于肤，轻浮于表。</td></tr>
+    <tr><td><strong>核心差异点</strong></td><td>独创「肤浮式」散香：香气轻浮于肌肤表层，30cm 贴身清润不齁，1m 外悠悠可闻；「肌肤一日三态」产品体系还原清晨、午后、入夜三个时刻的原生肤香；无边界伪体香体验：盲测下多数人无法分辨是香水还是原生体香。</td></tr>
+    <tr><td><strong>核心壁垒</strong></td><td>心智壁垒：率先定义「肤浮式伪体香」体感标准，以「肌肤一日三香」建立差异化品类认知。</td></tr>
+    <tr><td><strong>首发产品</strong></td><td>三款淡香水 EDT，共享统一「肤浮式」散香基底。对应少女肌肤一日三态：入夜沐浴后 · 午后林间 · 清晨醒来。正装 200–300 元，试香装 9.9 元。</td></tr>
+    <tr><td><strong>目标用户</strong></td><td>20–26 岁一二线城市精致女性。购买动机：自我愉悦 ＞ 追求无负担的社交香气 ＞ 异性好感。</td></tr>
+    <tr><td><strong>冷启动</strong></td><td>小红书为核心阵地。核心传播主线：「肤浮式伪体香 · 少女的一日三香」。内容比例：70% 场景种草 + 30% 品牌心智。</td></tr>
     <tr><td><strong>启动预算</strong></td><td>&lt;10 万。调香打样 + 首批大货优先，包材占比控制在 15% 以内。</td></tr>
-    <tr><td><strong>创始人优势</strong></td><td>小红书香水博主（~1万粉丝），内容能力极强（周更3篇零成本），供应链通路（朋友品牌→工厂）。</td></tr>
+    <tr><td><strong>创始人优势</strong></td><td>小红书香水博主（~1 万粉丝），内容能力极强（周更 3 篇零成本），供应链通路（朋友品牌→工厂）。</td></tr>
   </table></div>
 </article>
 
 <div class="section-line"><span>Page 02</span></div>
 
-<!-- ═══════════ 第2页：品牌底层定位 ═══════════ -->
+<!-- ═══════════ P2 品牌底层定位 ═══════════ -->
 <article class="page" id="p2">
   <span class="page-num">Page 02</span>
-  <h2>品牌底层定位</h2>
+  <h2>品牌底层定位 · 肌肤的一日三香</h2>
 
-  <div class="conclusion-bar">品类占位型 —— "原生肤感香氛"品类没有领导品牌。第一个站出来的品牌定义这个品类。</div>
-
-  <div class="highlight">
-    <h4 style="margin-top:0;">生态位公式</h4>
-    <p style="margin-bottom:0;"><strong>原生体香需求 ∩ 伪体香搜索流量 ∩ 香水博主审美判断力</strong></p>
+  <div class="story-block">
+    <h4 style="margin-top:0;">品牌故事</h4>
+    <p>FUFUSCENT 肤浮认为，真正的伪体香从来不是复刻某一种香精味道，而是还原少女肌肤在不同状态下，随呼吸自然透出的原生气息。</p>
+    <p>它是清晨刚睡醒时，带着被窝温度的软嫩肤香；是午后跑过林间草地，沾了草木与果香的鲜活肤香；是入夜沐浴后，洁净清透的冷润肤香。没有浓烈的喷洒感，没有刻意的香精味，所有香气都从肌理里自然浮出来，像你天生就该有的味道。</p>
+    <p style="margin-bottom:0;">我们以「肌肤的一日状态」为灵感，打造三款无边界轻香，还原少女最本真的皮肤气息 —— 你闻到的不是香水，是她皮肤在呼吸。</p>
   </div>
+  <p class="note-sm"><strong>FUFUSCENT</strong> = FUFU（肌肤轻呼吸的软感节奏）+ SCENT（肌理透出的原生香气）&emsp;|&emsp;中文「<strong>肤浮</strong>」：香生于肤，轻浮于表</p>
 
   <div class="table-wrap"><table>
     <tr><th style="width:22%">要素</th><th>确认内容</th></tr>
-    <tr><td>定位方法</td><td><strong>切割 · 品类占位型</strong>。对标案例：小仙炖——"鲜炖燕窝，就选小仙炖"= 品类 + 品牌绑定。</td></tr>
-    <tr><td>心智占位</td><td>"像皮肤自己透出来的原生体香。"不抢香水赛道心智，不参与"约会斩男"话术竞争。</td></tr>
-    <tr><td>品牌名</td><td><strong>肌肤所生 Skinborn</strong>（连写）。内核：肌肤所生——不是喷上去的，是皮肤自己长出来的味道。六维评分 28/30。</td></tr>
-    <tr><td>品牌级 Slogan</td><td><strong>"肤香天生，无需刻意。"</strong></td></tr>
-    <tr><td>产品级 Slogan</td><td><strong>"没有香水感的原生体香。半米外像没喷，贴身闻清润自然。"</strong></td></tr>
-    <tr><td>品牌原型</td><td><strong>照顾者 Caregiver</strong>——关怀、守护、不抢戏。"约会最强辅助"。</td></tr>
+    <tr><td>品类定位</td><td><strong>肤浮式轻感伪体香</strong></td></tr>
+    <tr><td>心智占位</td><td>"像皮肤呼吸一样，自然浮出来的淡香"</td></tr>
+    <tr><td>品牌内核</td><td><strong>香生肌理，轻浮于肤</strong></td></tr>
+    <tr><td>品牌级 Slogan</td><td><strong>"香生肌理，轻浮于肤。"</strong></td></tr>
+    <tr><td>产品级 Slogan</td><td><strong>"像皮肤呼吸一样，自然透出淡香。"</strong></td></tr>
+    <tr><td>品牌原型</td><td><strong>照顾者 Caregiver</strong>——关怀、守护、不抢戏</td></tr>
     <tr><td>使命</td><td>"让每一个女生——喷香这件事，不需要想。"</td></tr>
     <tr><td>价值观</td><td>① 她的感受，不是他的偏好 ② 自信是被提醒的，不是被创造的</td></tr>
-    <tr><td>视觉方向</td><td>清冷水汽→贴肤温度。色彩：水雾白、冷调瓷白、极淡裸调。瓶身：磨砂软触（摸起来像皮肤）。避雷：安娜苏式装饰、粉甜风。</td></tr>
+    <tr><td>视觉方向</td><td>清冷水汽→贴肤温度。色彩：水雾白、冷调瓷白、极淡裸调。瓶身：哑光陶瓷不透明长款设计，质感贴合肌肤温润肌理，呼应「肤浮」呼吸感。避雷：安娜苏式装饰、粉甜风。</td></tr>
     <tr><td>品牌故事</td><td>男生香水博主，看着女生买回来的"伪体香"不好闻 + 不伪体香。两个都不对。市面上没有。所以来做。</td></tr>
   </table></div>
 
   <div class="pull-quote">
-    <p>"没有香水感的原生体香。<br>半米外像没喷，贴身闻清润自然。"</p>
-    <p class="attr">—— 肌肤所生 Skinborn 产品级承诺</p>
+    <p>"像皮肤呼吸一样，<br>自然透出淡香。"</p>
+    <p class="attr">—— FUFUSCENT 肤浮 产品级承诺</p>
   </div>
 </article>
 
 <div class="section-line"><span>Page 03</span></div>
 
-<!-- ═══════════ 第3页：首发三款产品体系 ═══════════ -->
+<!-- ═══════════ P3 首发三款产品体系 ═══════════ -->
 <article class="page" id="p3">
   <span class="page-num">Page 03</span>
-  <h2>首发产品体系 · 统一伪体香标准</h2>
+  <h2>首发产品体系 · 肌肤的一日三态</h2>
+  <p style="color:var(--ink-soft);margin-bottom:2rem;">首发三款香型，对应少女肌肤在一天中三个时刻的原生状态，共享同一套「肤浮式」散香基底，呈现不同状态下的自然体香质感。</p>
 
-  <div class="conclusion-bar">全系列共享统一贴肤香基，三款均适配"伪体香"营销逻辑，覆盖不同约会场景。产品形态：淡香水（EDT 浓度，贴肤不扰人）。正装 200–300 元，试香装 9.9 元。</div>
+  <div class="conclusion-bar">全系列统一肤浮散香标准（三款 100% 达标）。产品形态：淡香水 EDT。正装 200–300 元，试香装 9.9 元。</div>
 
-  <h3>一、全系列统一伪体香标准（品牌底线，三款 100% 达标）</h3>
+  <h3>一、全系列统一肤浮散香标准</h3>
   <div class="table-wrap"><table>
     <tr><th style="width:22%">标准</th><th>具体要求</th></tr>
-    <tr><td><strong>① 无冲击感</strong></td><td>低酒精配方，上身无刺鼻冲感。10 分钟内完全与角质层融合，无"刚喷完香水"的突兀边界。</td></tr>
-    <tr><td><strong>② 晕染式散香</strong></td><td>香味呈晕染状附着在皮肤表层。像捧花一天染上的气息、逛森林沾到的露水感——非喷洒式集中香源。</td></tr>
-    <tr><td><strong>③ 留香尺度</strong></td><td>贴身有效留香 6–8 小时。30cm 近距离闻清润不齁，1m 距离悠悠可闻，社交距离不刻意不扰人。</td></tr>
-    <tr><td><strong>④ 伪体香金标准</strong></td><td>盲测场景下，多数人无法精准分辨是香水还是原生体香。男性高频反馈「你本身就很好闻」——而非「你香水很好闻」。</td></tr>
+    <tr><td><strong>① 无冲击感</strong></td><td>低酒精配方，上身无刺鼻冲感。10 分钟内与肌肤温度融合，无"刚喷完香水"的突兀边界。</td></tr>
+    <tr><td><strong>② 轻浮式散香</strong></td><td>香味呈柔雾状轻浮于皮肤表层，像捧花一日染上的气息、林间漫步沾到的露水感——非喷洒式集中香源，随体温呼吸自然晕开。</td></tr>
+    <tr><td><strong>③ 留香尺度</strong></td><td>贴身有效留香 6–8 小时。30cm 近距离清润不齁，1m 距离悠悠可闻，社交距离无压迫感。</td></tr>
+    <tr><td><strong>④ 肤浮金标准</strong></td><td>盲测下多数人无法精准分辨是香水还是原生体香。旁人高频反馈「你身上好好闻」——而非「你香水很好闻」。</td></tr>
   </table></div>
 
-  <h3>二、首发三款香型详情</h3>
+  <h3>二、肌肤一日三态 · 三款香型</h3>
 
-  <!-- 香型1 -->
+  <!-- 第一款：入夜沐浴后 -->
   <div class="product-card">
-    <h3>香型一 · ________</h3>
-    <p class="scene">核心场景：刚沐浴完的清冷少女肤感</p>
-    <p><strong>画面锚点：</strong>浴室水汽未散，茉莉花香混着洁净肤感，易碎又有韧劲的疏离感。</p>
+    <h3>第一款 · ________</h3>
+    <p class="scene">入夜沐浴后 · 洁净呼吸的冷润肌肤</p>
+    <p><strong>核心皮肤状态：</strong>刚洗完澡的肌肤，毛孔舒展，带着水汽的微凉与洁净感，清透又有韧性——是卸下所有修饰后最本真的肤感。</p>
+    <p><strong>画面锚点：</strong>浴室薄雾未散，皮肤带着湿润的光泽，茉莉花香混着洁净的皂感顺着毛孔轻轻浮出来，清冷又有生命力。</p>
     <div class="pull-quote" style="margin:1.5rem 0;padding:1.2rem 0;">
       <p>"她是一株香气幽微，却又绵长的花。"</p>
     </div>
     <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
     <div class="scent-row">
-      <div><strong>顶层气息</strong><br>极淡蒸馏水汽 + 茉莉花瓣露感。仅上身 10 分钟内可捕捉清冽感。</div>
-      <div><strong>中层融合</strong><br>柔润洁净皂感 + 薄透茉莉花香。如水汽裹着花香渗进皮肤，无甜腻感。</div>
-      <div><strong>基底肤香</strong><br>高纯度白麝香 + 柔肤内酯。与肌肤完全贴合，最终留存的原生体香底色。</div>
+      <div><strong>表层气息</strong><br>极淡的蒸馏水汽 + 薄透茉莉露感，像刚洗完澡皮肤表面的湿润凉意，仅前 10 分钟可捕捉。</div>
+      <div><strong>中层融合</strong><br>柔润洁净皂感 + 淡茉莉花香，像香气渗进了肌理里，和皮肤的洁净感融为一体，完全没有花香的甜腻。</div>
+      <div><strong>基底肤香</strong><br>高纯度白麝香 + 柔肤内酯，最终回归皮肤本身的干净质感，贴肤且无边界。</div>
     </div>
     <div class="highlight-green" style="margin-bottom:0;">
-      <strong>伪体香营销锚点：</strong>初次约会清冷氛围感神器。凑近闻像刚洗完澡的干净体香。男生只会觉得你天生自带洁净感——完全想不到是喷了香氛。
+      <strong>肤浮体香营销锚点：</strong>像刚洗完澡的皮肤自己会呼吸，凑近是清透的洁净感，旁人只会觉得你天生干净，完全察觉不到是香氛。
     </div>
   </div>
 
-  <!-- 香型2 -->
+  <!-- 第二款：午后林间 -->
   <div class="product-card">
-    <h3>香型二 · ________</h3>
-    <p class="scene">核心场景：带绿意的清甜少女肤感</p>
-    <img src="images/scent-02.jpg" alt="香型二意向图" style="width:100%;border-radius:4px;margin-bottom:1rem;">
-    <p><strong>画面锚点：</strong>穿绿纱裙跑过果园草地，青苹果脆甜混着草叶露水，沾在皮肤上的鲜活气息。</p>
+    <h3>第二款 · ________</h3>
+    <p class="scene">午后林间 · 鲜活舒展的清甜肌肤</p>
+    <p><strong>核心皮肤状态：</strong>在户外晒过太阳的肌肤，温度微微升高，毛孔舒展，沾了草木与果香的鲜活感——是元气少女自带的朝气肤感。</p>
+    <img src="images/scent-02.jpg" alt="午后林间意向图" style="width:100%;border-radius:4px;margin-bottom:1rem;">
+    <p><strong>画面锚点：</strong>穿绿纱裙跑过果园草地，风把青苹果与草叶的气息揉进皮肤里，带着露水的清透，甜而不腻，鲜活不跳脱。</p>
     <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
     <div class="scent-row">
-      <div><strong>顶层气息</strong><br>极淡青苹果脆感 + 嫩草叶尖绿意。酸大于甜，无果调香水的齁甜感。</div>
-      <div><strong>中层融合</strong><br>柔和青草水汽 + 淡苹果皮清香。像风裹着果香扫过皮肤——"染上"而非"喷上"。</div>
-      <div><strong>基底肤香</strong><br>统一白麝香汤底。果绿意锁在肤感里，甜而不飘，鲜活不跳脱。</div>
+      <div><strong>表层气息</strong><br>极淡的青苹果脆感 + 嫩草叶尖绿意，像皮肤刚触到户外空气的鲜活感，酸大于甜，无齁感。</div>
+      <div><strong>中层融合</strong><br>柔和青草水汽 + 淡苹果皮清香，像气息顺着毛孔融进皮肤——"沾在身上"而非"喷在身上"的质感。</div>
+      <div><strong>基底肤香</strong><br>统一白麝香汤底，把果绿意牢牢锁在肤感里，甜而不飘，最终回归皮肤的元气质感。</div>
     </div>
     <div class="highlight-green" style="margin-bottom:0;">
-      <strong>伪体香营销锚点：</strong>户外约会 / 夏日专属。男生会觉得你自带清甜少女感——像刚吃完苹果、逛完公园的自然气息，完全不刻意。
+      <strong>肤浮体香营销锚点：</strong>像逛了一下午果园的皮肤自带清甜，远闻悠悠的，旁人只会觉得你天生带着少女感，没有香水的刻意感。
     </div>
   </div>
 
-  <!-- 香型3 -->
+  <!-- 第三款：清晨醒来 -->
   <div class="product-card">
-    <h3>香型三 · ________</h3>
-    <p class="scene">核心场景：晨起被窝里的软嫩少女肤感</p>
-    <p><strong>画面锚点：</strong>阳光晒过的棉被里，刚睡醒的女生，皮肤带着软乎乎的奶绒感，干净又娇嫩。</p>
+    <h3>第三款 · ________</h3>
+    <p class="scene">清晨醒来 · 松弛软嫩的暖绒肌肤</p>
+    <p><strong>核心皮肤状态：</strong>刚从被窝里醒过来的肌肤，带着体温与棉绒感，松弛柔软——是没有任何修饰的原生娇嫩肤感。</p>
+    <p><strong>画面锚点：</strong>阳光透过窗帘落在床上，皮肤带着被窝的暖感与棉绒气息，软乎乎的，干净又治愈。</p>
     <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
     <div class="scent-row">
-      <div><strong>顶层气息</strong><br>极淡阳光暖感 + 棉麻纤维气息。像晒过太阳的被子蹭在皮肤上的温度。</div>
-      <div><strong>中层融合</strong><br>婴儿般淡奶感 + 极柔花香底蕴。奶味淡到几乎无，仅留存软嫩肤感联想，无齁感。</div>
-      <div><strong>基底肤香</strong><br>暖调白麝香 + 柔肤内酯。暖而不闷，软而不腻——皮肤本身透出来的软嫩质感。</div>
+      <div><strong>表层气息</strong><br>极淡的阳光暖感 + 棉麻纤维气息，像皮肤蹭过晒了太阳的被子，带着松弛的温度。</div>
+      <div><strong>中层融合</strong><br>婴儿般淡奶感 + 极柔花香底蕴，奶味淡到几乎无，只留下皮肤软嫩的联想，完全不齁。</div>
+      <div><strong>基底肤香</strong><br>暖调白麝香 + 柔肤内酯，暖而不闷，软而不腻，最终回归皮肤本身的软嫩质感。</div>
     </div>
     <div class="highlight-green" style="margin-bottom:0;">
-      <strong>伪体香营销锚点：</strong>近距离亲密接触绝杀。抱起来是软乎乎的干净奶感。男生会以为你天生皮肤就带着甜香——毫无人工痕迹。
+      <strong>肤浮体香营销锚点：</strong>像刚睡醒的皮肤自带软香，抱起来是暖暖的干净感，旁人会以为你天生皮肤就带着甜，毫无人工痕迹。
     </div>
   </div>
 
@@ -276,312 +263,148 @@
   <div class="table-wrap"><table>
     <tr><th style="width:25%">维度</th><th>设定</th></tr>
     <tr><td><strong>核心形态</strong></td><td>淡香水（EDT 浓度，低酒精配方，贴肤融合度优先）</td></tr>
+    <tr><td><strong>瓶身设计</strong></td><td>哑光陶瓷不透明长款瓶身，极简无衬线全大写英文字母「FUFUSCENT」。质感贴合肌肤温润肌理，呼应「肤浮」呼吸感。</td></tr>
     <tr><td><strong>定价策略</strong></td><td>正装 200–300 元区间；配套 9.9 元试香装降低试错成本</td></tr>
     <tr><td><strong>包装原则</strong></td><td>极简贴肤感设计，包材成本占比控制在 15% 以内，优先保障调香品质</td></tr>
     <tr><td><strong>初期策略</strong></td><td>MVP 阶段首发三款，不做更多 SKU。0–6 个月验证单品穿透力。</td></tr>
   </table></div>
   <h4>瓶身三视图</h4>
-  <img src="images/bottle-3view.png" alt="瓶身三视图" style="width:100%;border-radius:4px;border:1px solid var(--rule);">
+  <img src="images/bottle-3view.png" alt="FUFUSCENT 瓶身三视图" style="width:100%;border-radius:4px;border:1px solid var(--rule);">
 </article>
 
 <div class="section-line"><span>Page 04</span></div>
 
-<!-- ═══════════ 第4页：市场与竞品分析 ═══════════ -->
+<!-- ═══════════ P4 市场与竞品分析 ═══════════ -->
 <article class="page" id="p4">
   <span class="page-num">Page 04</span>
   <h2>市场与竞品分析</h2>
+  <div class="conclusion-bar">300 亿香水大盘增速 18%+，63.1% 消费者首选 EDT。"伪体香"话题 10 亿+ 浏览——无品牌独占心智。肤浮以「肤浮式伪体香」+「一日三香」叙事建立差异化品类认知。</div>
 
-  <div class="conclusion-bar">300 亿香水大盘增速 18%+，但国产品牌仅占约 30%。固体香膏年增 541%，淡香水 EDT 为主流（63.1% 消费者首选）。"伪体香"话题 10 亿+ 浏览 — 无品牌独占心智。</div>
-
-  <h3>一、市场大盘（2025–2026）</h3>
+  <h3>一、市场大盘</h3>
   <div class="table-wrap"><table>
     <tr><th style="width:22%">指标</th><th>数据</th><th>来源</th></tr>
     <tr><td>2025 年香水市场规模</td><td><strong>约 300 亿元</strong>，连续 5 年 18%+ 增速</td><td>艾媒咨询 2026</td></tr>
-    <tr><td>2025 年香氛香薰整体</td><td><strong>285.8 亿元</strong>，近三年年均增速 8%</td><td>前瞻产业研究院 2026</td></tr>
-    <tr><td>固体香膏增速</td><td><strong>+541%</strong>（2025 年增长最快的香水形态）</td><td>用户说 2025 线上香氛洞察</td></tr>
-    <tr><td>香水品类线上占比</td><td>2025 年达 <strong>38%</strong>（抖音 60% vs 淘系 40%）</td><td>2026 中国香水香氛行业白皮书</td></tr>
-    <tr><td>消费者价格舒适区</td><td><strong>101–500 元</strong> 接受度最高（41% 选 200–500 元）</td><td>艾媒咨询 2026</td></tr>
-    <tr><td>淡香水偏好</td><td><strong>63.1%</strong> 消费者选择 EDT（淡香水），追求贴肤自然</td><td>艾媒咨询 2026</td></tr>
-    <tr><td>购买动机</td><td><strong>59.7%</strong> 为"取悦自己、提升情绪体验"购买</td><td>2026 中国香水香氛行业白皮书</td></tr>
-    <tr><td>小红书香氛兴趣用户</td><td>突破 <strong>1.7 亿</strong></td><td>小红书 2025 趋势图鉴</td></tr>
+    <tr><td>淡香水（EDT）偏好</td><td><strong>63.1%</strong> 消费者首选 EDT</td><td>艾媒咨询 2026</td></tr>
+    <tr><td>消费者价格舒适区</td><td><strong>200–500 元</strong> 接受度最高（41%）</td><td>艾媒咨询 2026</td></tr>
+    <tr><td>购买动机</td><td><strong>59.7%</strong> 为"取悦自己"购买</td><td>2026 香水香氛白皮书</td></tr>
+    <tr><td>"不撞香"需求</td><td>小红书搜索同比上涨 <strong>847%</strong></td><td>小红书 2025 趋势图鉴</td></tr>
   </table></div>
 
-  <h3>二、竞争格局分层</h3>
+  <h3>二、竞争格局</h3>
   <div class="table-wrap"><table>
     <tr><th>层级</th><th>代表</th><th>价格带</th><th>竞争态势</th></tr>
-    <tr><td><strong>国际奢侈品牌</strong></td><td>Dior、Chanel、YSL、Hermès</td><td>600–1500 元</td><td>CR5 约 45%，TOP10 均为国际品牌。占据高端心智但<strong>不走"原生肤香"场景化路线</strong></td></tr>
-    <tr><td><strong>国产高端香氛</strong></td><td>观夏、闻献、野兽派</td><td>500–1750 元</td><td>主打东方美学 + 文化叙事。定价对标国际大牌但<strong>不聚焦"伪体香"大众场景</strong>。闻献"羽化仙"以麝香打造伪体香获认可，但 850–1750 元价格带与肌肤所生不重叠</td></tr>
-    <tr><td><strong>新锐平价伪体香</strong></td><td>冰希黎 · 浪漫天使、隐衫之欲、黑尊</td><td>50–200 元</td><td>🔴 红海。有产品名无品牌，香水感明显。用户用完仍觉得"是喷了香水"——<strong>这是肌肤所生要打的结构性短板</strong></td></tr>
-    <tr><td><strong>固体香膏 / 淡香氛</strong></td><td>Tamburins、观夏固体香膏、故宫香膏</td><td>100–500 元</td><td>🟢 固体香膏品类增速 541%。便携 + 贴肤 + 无酒精 = 伪体香天然载体。<strong>肌肤所生以淡香水 EDT 切入，卡位"原生肤香"品类空白</strong></td></tr>
+    <tr><td><strong>国际奢侈品牌</strong></td><td>Dior、Chanel、YSL、Hermès</td><td>600–1500 元</td><td>CR5 约 45%，TOP10 均为国际品牌。不走"伪体香"场景化路线。</td></tr>
+    <tr><td><strong>国产高端香氛</strong></td><td>观夏、闻献、野兽派</td><td>500–1750 元</td><td>主打东方美学 + 文化叙事，价格带不重叠。</td></tr>
+    <tr><td><strong>新锐平价伪体香</strong></td><td>冰希黎 · 浪漫天使、隐衫之欲</td><td>50–200 元</td><td>🔴 红海。有产品无品牌，香水感明显。</td></tr>
   </table></div>
 
-  <h3>三、肌肤所生的市场位置</h3>
+  <h3>三、肤浮的差异化位置</h3>
   <div class="highlight">
-    <p><strong>200–300 元原生肤香淡香水 = 品类交叉点的空白。</strong>固体香膏已验证"贴肤无酒精"需求（+541%），63.1% 消费者选择 EDT 追求贴肤自然——但尚无品牌用淡香水做"原生肤香"的品类占位。平价伪体香个护有流量（10 亿+ 浏览）但产品力不足（香水感、化工感）。肌肤所生卡位：<strong>用淡香水 EDT + 统一贴肤香基的产品标准，定义"原生肤香"品类。</strong></p>
-    <p style="margin-bottom:0;"><em>关键数据来源：艾媒咨询 2026、前瞻产业研究院 2026、用户说 2025 线上香氛洞察、2026 中国香水香氛行业白皮书（有赞/颖通）</em></p>
+    <p><strong>200–300 元「肤浮式伪体香」= 品类空白。</strong>以「肌肤一日三态」的细腻叙事区别于同质化产品。品类概念差异化：首创「肤浮」体感命名与「一日三香」产品故事线，用户记忆点更强，心智占位更精准。</p>
+    <p style="margin-bottom:0;"><em>来源：艾媒咨询 2026、前瞻产业研究院 2026、2026 中国香水香氛行业白皮书</em></p>
   </div>
 </article>
 
 <div class="section-line"><span>Page 05</span></div>
 
-<!-- ═══════════ 第5页：核心用户画像 ═══════════ -->
+<!-- ═══════════ P5 核心用户画像 ═══════════ -->
 <article class="page" id="p5">
   <span class="page-num">Page 05</span>
   <h2>核心用户画像</h2>
+  <div class="conclusion-bar-light">核心用户：20–26 岁，一二线城市精致女性。月可支配 3000–8000 元。购买动机：自我愉悦 ＞ 追求无负担的社交香气 ＞ 异性好感。</div>
 
-  <div class="conclusion-bar-light">核心用户：20–26 岁，一二线城市精致女性。月可支配 3000–8000 元。购买动机：自我愉悦（59.7%）＞ 社交细节加分 ＞ 异性好感。她们不是在买香水——是在买"喷了觉得自己又松弛又美"的情绪确认。</div>
-
-  <h3>一、定量画像（数据锚点）</h3>
   <div class="table-wrap"><table>
-    <tr><th style="width:22%">维度</th><th>数据</th><th>来源</th></tr>
-    <tr><td>性别</td><td>香水消费者 <strong>68% 女性</strong>；小红书香氛用户女性 91%</td><td>尚普咨询 2025</td></tr>
-    <tr><td>核心年龄</td><td><strong>26–35 岁</strong> 占 41%（消费主力）；18–25 岁为增速最快群体</td><td>2026 中国香水香氛白皮书</td></tr>
-    <tr><td>城市分布</td><td>一线 + 新一线城市占 <strong>60%+</strong>；二线城市增速超一线</td><td>尚普咨询 2025</td></tr>
-    <tr><td>价格舒适区</td><td><strong>200–500 元</strong> 接受度 41%；101–200 元占 28%</td><td>艾媒咨询 2026</td></tr>
-    <tr><td>购买动机</td><td><strong>59.7%</strong> 取悦自己 / 提升情绪体验；<strong>56.3%</strong> 为"我喜欢"买单（同比 +16pp）</td><td>有赞白皮书 2026</td></tr>
-    <tr><td>信息触达</td><td><strong>31%</strong> 通过小红书 / 抖音首次接触新品；<strong>38%</strong> 信任真实生活分享型博主（明星仅 5%）</td><td>尚普咨询 2025</td></tr>
-    <tr><td>试香偏好</td><td><strong>64%</strong> 偏爱小样赠送；<strong>72.5%</strong> 优先考虑香气类型</td><td>大学生消费调研 2025</td></tr>
-    <tr><td>"不撞香"需求</td><td>"出门不撞香"小红书搜索同比上涨 <strong>847%</strong></td><td>小红书 2025 趋势图鉴</td></tr>
-  </table></div>
-
-  <h3>二、定性画像：肌肤所生的"小A"</h3>
-  <div class="table-wrap"><table>
-    <tr><th style="width:20%">维度</th><th>描述</th></tr>
-    <tr><td>基础画像</td><td>23 岁，一线 / 新一线城市，本科或初入职场。月可支配 4000 元左右。独居或合租。小红书重度用户，日均使用 1h+。</td></tr>
-    <tr><td>香氛使用习惯</td><td>已有 3–5 支香水但<strong>约会前仍会纠结喷哪支</strong>。买过"伪体香"产品——<strong>不好闻或不伪体香，放抽屉不再用</strong>。对"千人千面""贴肤""体香"概念有认知但未被任何品牌满足。</td></tr>
-    <tr><td>购买决策链路</td><td>小红书刷到 → 搜索"约会伪体香推荐" → 看博主测评 → 被种草 → 下单试香装 → 好用 → 复购正装 + 推荐给朋友</td></tr>
-    <tr><td>核心痛点</td><td><strong>① 试错困境</strong>：约会前衣服换两套、口红试三支——没精力再"试香"。<strong>② 香水感排斥</strong>：市面"伪体香"仍有酒精冲感 / 化工感 / "喷了香水"的边界。<strong>③ 决策疲劳</strong>：太多选择，缺一个"闭眼喷就对了"的默认项。</td></tr>
-    <tr><td>购买动机排序</td><td><strong>① 自我愉悦</strong>（"今天又松弛又美"的自我确认感）＞ <strong>② 社交细节加分</strong>（"他靠近时悠悠闻到的干净气息"）＞ <strong>③ 异性好感</strong>（"他说你本身就很好闻——不是'你香水很好闻'"）</td></tr>
-    <tr><td>关键场景</td><td>约会出门前最后一步；下班后补香赴约；洗完澡睡前自用——"让自己好闻，不是为了谁"</td></tr>
+    <tr><th style="width:22%">维度</th><th>画像详情</th></tr>
+    <tr><td><strong>年龄与城市</strong></td><td>20–26 岁，一二线城市</td></tr>
+    <tr><td><strong>月可支配收入</strong></td><td>3000–8000 元。200–300 元香氛 = 轻奢犒赏</td></tr>
+    <tr><td><strong>消费行为</strong></td><td>小红书种草→线上购买。64% 偏爱小样试用。</td></tr>
+    <tr><td><strong>购买动机排序</strong></td><td><strong>① 自我愉悦</strong>（"今天又松弛又美"）＞ <strong>② 追求无负担的社交香气</strong>（喜欢"天生好皮自带淡香"的自然感，不喜欢香水的强存在感）＞ <strong>③ 异性好感</strong></td></tr>
+    <tr><td><strong>核心痛点</strong></td><td>不满市面伪体香要么太浓太刻意、要么太贴肤无散香感。想要「似有若无、像自己体香」的呼吸感香气。拒绝"斩男香""浓香"带来的社交压迫感。</td></tr>
+    <tr><td><strong>关键场景</strong></td><td>约会前最后一步、日常出门前、洗澡后。决策模式：穿搭搞定、妆容搞定——喷香不想再纠结。</td></tr>
   </table></div>
 
   <div class="highlight">
-    <h4 style="margin-top:0;">核心洞察：悦己驱动的"伪体香"需求 = 情绪消费的最大公约数</h4>
-    <p>59.7% 消费者为"取悦自己"买香——她们要的不是"让别人觉得我好闻"，而是<strong>"我自己觉得我今天很好闻"</strong>。"伪体香"的本质不是"伪装"，是<strong>"我本来就该这么好闻"的自我确认。</strong>肌肤所生的产品承诺——"没有香水感的原生体香，半米外像没喷，贴身闻清润自然"——恰好站在这个需求的最大公约数上。</p>
-    <p style="margin-bottom:0;"><em>数据来源：艾媒咨询 2026、尚普咨询 2025、2026 中国香水香氛行业白皮书（颖通/有赞）、小红书 2025 香水香氛趋势图鉴</em></p>
+    <h4 style="margin-top:0;">核心洞察</h4>
+    <p>约会前——衣服不能每件都试、口红不能每支都涂。她已经消耗了全部决策精力。<strong>喷香这件事，她不想再纠结。</strong>她需要一个"闭眼喷就对了"的默认选项。</p>
+    <p style="margin-bottom:0;"><strong>FUFUSCENT 肤浮解决的：在所有需要做决定的时刻里，至少有一件事是确定的。</strong></p>
   </div>
 </article>
 
 <div class="section-line"><span>Page 06</span></div>
 
-<!-- ═══════════ 第6页：运营冷启动策略 ═══════════ -->
+<!-- ═══════════ P6 运营冷启动策略 ═══════════ -->
 <article class="page" id="p6">
   <span class="page-num">Page 06</span>
   <h2>运营冷启动策略</h2>
+  <div class="conclusion-bar">核心传播主线：「肤浮式伪体香 · 少女的一日三香」。核心种草话术：「像皮肤自己呼出来的香气」。小红书为核心阵地。70% 场景种草 + 30% 品牌心智。</div>
 
-  <div class="conclusion-bar">小红书为核心阵地。"约会伪体香"承接搜索流量 → "原生肤香"建立品牌心智。场景化内容 70% + 品牌心智 30%。利用创始人香水博主身份，内容成本 ≈ 0。</div>
-
-  <h3>一、冷启动核心逻辑</h3>
+  <h3>一、冷启动阶段规划</h3>
   <div class="table-wrap"><table>
-    <tr><th style="width:18%">阶段</th><th>时间</th><th>目标</th><th>核心动作</th></tr>
-    <tr><td><strong>蓄水期</strong></td><td>0–2 月</td><td>建立"原生肤香"认知锚点</td><td>创始人 IP：发布"我为什么决定做肌肤所生"系列内容。态度内容："市面上伪体香的香水感问题——一支一支拆给你看"。积累首批关注者，引导加私域。</td></tr>
-    <tr><td><strong>种草期</strong></td><td>2–4 月</td><td>场景化种草 + 产品首发预热</td><td>"约会伪体香推荐""半米外像没喷的香""他说你是不是有体香"——承接小红书搜索流量最大的约会香关键词。配合素人/KOC 试用 + 真实反馈内容。</td></tr>
-    <tr><td><strong>转化期</strong></td><td>4–6 月</td><td>产品上线 + 种子用户验证</td><td>9.9 元试香装引流 → 私域沉淀 → 正装转化。首批 100 个种子用户深度运营，收集"约会反馈"→ 产品迭代 + UGC 内容放大。</td></tr>
-    <tr><td><strong>扩圈期</strong></td><td>6 月+</td><td>心智巩固 + 渠道拓展</td><td>"肌肤所生 = 原生肤香标准"心智加固。小红书验证跑通后拓展天猫、抖音。</td></tr>
+    <tr><th style="width:17%">阶段</th><th>时间</th><th>目标</th><th>核心动作</th></tr>
+    <tr><td><strong>蓄水期</strong></td><td>0–2 月</td><td>建立「肤浮式伪体香」认知</td><td>创始人 IP 首发系列内容。概念科普：《什么是肤浮式伪体香？和普通伪体香有什么区别》。积累首批关注者。</td></tr>
+    <tr><td><strong>种草期</strong></td><td>2–4 月</td><td>场景化种草 + 产品预热</td><td>场景故事类：《一天换三种体香？早中晚的皮肤味道居然不一样》。反差测评：《盲测挑战：哪款是香水，哪款是天生体香》。</td></tr>
+    <tr><td><strong>转化期</strong></td><td>4–6 月</td><td>产品上线 + 种子用户</td><td>9.9 元试香装引流 → 私域沉淀 → 正装转化。首批 100 个种子用户。</td></tr>
+    <tr><td><strong>扩圈期</strong></td><td>6 月+</td><td>心智巩固</td><td>「FUFUSCENT 肤浮 = 肤浮式伪体香标准」心智加固。验证跑通后拓展天猫、抖音。</td></tr>
   </table></div>
 
-  <h3>二、小红书内容方法论（参照呈白 + 森息案例）</h3>
+  <h3>二、博主矩阵与内容配比</h3>
   <div class="table-wrap"><table>
-    <tr><th style="width:20%">方法</th><th>具体操作</th><th>参考案例</th></tr>
-    <tr><td><strong>场景化种草模板</strong></td><td>"痛点（具象场景）+ 产品解决方案（视觉化）+ 情绪共鸣（氛围感）"。如"约会前换了两套衣服、试了三支口红——喷香这件事我不想再纠结了"→ 引出肌肤所生</td><td>呈白（非遗香氛）：一年内小红书从 0→百万 GMV，靠"居家策展人"+"非遗求索者"双 KOL 定位</td></tr>
-    <tr><td><strong>素人 / KOC 矩阵</strong></td><td>招募 50–100 个目标用户（租房党 / 职场新人 / 约会活跃女生），免费送试香装 + 内容模板，批量铺真实使用笔记。单品 UGC 成本 < 8 元/条</td><td>森息（小众香薰）：10 万预算→50 万曝光，100+ 素人免费送样 + 内容模板，1 个月搜索增长 300%</td></tr>
-    <tr><td><strong>搜索关键词抢占</strong></td><td>50 位素人同时覆盖"约会伪体香""原生体香""半米外像没喷""男友说你好闻"等长尾词，品牌名占据搜索前三屏</td><td>某品牌旗舰店日均访客从 1.2 万→4.5 万，主力款销量 +210%</td></tr>
-    <tr><td><strong>三阶段投放节奏</strong></td><td>测试期（20% 预算试错）→ 爆发期（50% 预算打爆款笔记）→ 维持期（30% 保长尾）</td><td>某香氛品牌爆发期曝光从 50 万增至 2000 万（2025 中小品牌小红书种草全链路方法论）</td></tr>
+    <tr><th>博主类型</th><th>占比</th><th>内容方向</th></tr>
+    <tr><td>香氛测评</td><td>30%</td><td>肤浮式伪体香 vs 普通伪体香对比测评</td></tr>
+    <tr><td>约会穿搭</td><td>30%</td><td>"约会前最后一层"场景植入</td></tr>
+    <tr><td>生活日常（早中晚场景）</td><td>40%</td><td>清晨 / 午后 / 入夜三个时刻的皮肤状态代入</td></tr>
   </table></div>
 
-  <h3>三、创始人 IP 优势</h3>
-  <p>小红书香水博主（~1 万粉丝），周更 3 篇零成本。31% 消费者通过社媒首次接触新品，38% 信任真实生活分享型博主（明星仅 5%）。<strong>你不需要花钱买信任——你本身就是信任。</strong>品牌内容不单独开号，从个人号自然过渡，粉丝信任→品牌信任无缝衔接。</p>
+  <h3>三、小红书方法论</h3>
+  <p>31% 消费者通过社媒首次接触新品，38% 信任真实分享型博主（明星仅 5%）。呈白一年内从 B 端→C 端百万 GMV。森息 10 万预算→50 万曝光→2000+ 订单。素人矩阵单条 UGC < 8 元。三阶段投放：测试期 20%→爆发期 50%→维持期 30%。</p>
 
   <div class="highlight-warn">
-    <h4 style="margin-top:0;">⚠️ 冷启动不做清单</h4>
-    <p style="margin-bottom:0;">不做大型投放（预算约束）。不在冷启动期分散到多平台（小红书一个阵地打透）。不跟风式产品——只做洞察式产品。不追求 GMV 速度——先在 100 个种子用户里验证"他是不是说你有体香"这个核心场景。</p>
+    <h4 style="margin-top:0;">不做什么</h4>
+    <p style="margin-bottom:0;">不做大型投放。不在冷启动期分散多平台。不跟风式产品。不追求 GMV 速度——先在 100 个种子用户里验证「肤浮式伪体香」核心场景。</p>
   </div>
-  <p style="margin-top:0.75rem;"><em>案例参考：呈白创始人"三不做"——不做市场太小的品类、不太在乎竞品跟随、不做跟风产品。呈白一年内从 B 端供应链→C 端百万 GMV。森息 10 万预算→50 万曝光→2000+ 订单。</em></p>
 </article>
 
 <div class="section-line"><span>Page 07</span></div>
 
-<!-- ═══════════ 第7页：预算与风险预案 ═══════════ -->
+<!-- ═══════════ P7 预算与风险预案 ═══════════ -->
 <article class="page" id="p7">
   <span class="page-num">Page 07</span>
   <h2>预算与风险预案</h2>
-
   <div class="conclusion-bar">启动预算 &lt;10 万。调香打样 + 首批大货占 55%，包材 ≤15%。内容生产零成本（创始人自产）。化妆品备案为不可跳过的合规底线。</div>
 
-  <h3>一、首年预算结构（&lt;10 万）</h3>
+  <h3>首年预算结构（&lt;10 万）</h3>
   <div class="table-wrap"><table>
     <tr><th>板块</th><th>占比</th><th>估算</th><th>说明</th></tr>
-    <tr><td><strong>调香打样 + 配方微调</strong></td><td>30%</td><td>~3 万</td><td>白麝香基底改良 + 三款变奏 + 多轮打样。与工厂 / 调香师按轮次结算，小批量优先。这是品牌的生命线——不可压缩。</td></tr>
+    <tr><td><strong>调香打样 + 配方微调</strong></td><td>30%</td><td>~3 万</td><td>白麝香基底改良 + 三款变奏 + 多轮打样。品牌生命线——不可压缩。</td></tr>
     <tr><td><strong>首批大货（100–300 支）</strong></td><td>25%</td><td>~2.5 万</td><td>灌装 + 质检 + 基础包装。公模瓶优先，不开私模。</td></tr>
-    <tr><td><strong>包装设计 + 打样</strong></td><td>15%</td><td>~1.5 万</td><td>外盒设计 + 瓶身定制涂层 + 内衬。Freelance 设计师按项目结算，不养全职。上限 15%，超出即砍——优先保障调香品质。</td></tr>
-    <tr><td><strong>化妆品备案 + 检测</strong></td><td>10%</td><td>~1 万</td><td>国产非特化妆品备案、微生物检测、安全性评价、重金属检测。合规为底线——不可跳过。配方冻结后第一时间送检，预留 2–3 个月周期。</td></tr>
-    <tr><td><strong>平台扣点 + 物流售后</strong></td><td>8%</td><td>~0.8 万</td><td>小红书店铺技术服务费（约 5%）+ 快递（约 6–8 元/单）+ 售后补发物料。</td></tr>
-    <tr><td><strong>基础推广 + 试香装</strong></td><td>7%</td><td>~0.7 万</td><td>9.9 元试香装制作 + 素人/KOC 寄样。少量小红书信息流测试（可选，ROI 为正再放量）。</td></tr>
-    <tr><td><strong>机动预留</strong></td><td>5%</td><td>~0.5 万</td><td>不可预见——调香追加一轮、包装修改一次、快递涨价等。</td></tr>
+    <tr><td><strong>包装设计 + 打样</strong></td><td>15%</td><td>~1.5 万</td><td>外盒设计 + 哑光陶瓷瓶身定制 + 内衬。Freelance 设计师按项目结算。上限 15%，超出即砍。</td></tr>
+    <tr><td><strong>化妆品备案 + 检测</strong></td><td>10%</td><td>~1 万</td><td>国产非特备案、微生物检测、安全性评价。合规底线——不可跳过。配方冻结后第一时间送检。</td></tr>
+    <tr><td><strong>平台扣点 + 物流售后</strong></td><td>8%</td><td>~0.8 万</td><td>小红书店铺技术服务费 + 快递 + 售后补发。</td></tr>
+    <tr><td><strong>基础推广 + 试香装</strong></td><td>7%</td><td>~0.7 万</td><td>9.9 元试香装制作 + 素人/KOC 寄样。</td></tr>
+    <tr><td><strong>机动预留</strong></td><td>5%</td><td>~0.5 万</td><td>不可预见支出。</td></tr>
     <tr><td><strong>内容生产</strong></td><td>0%</td><td>0</td><td>创始人自产内容，周更 3 篇。</td></tr>
   </table></div>
 
-  <h3>二、关键成本控制原则</h3>
-  <div class="highlight">
-    <p><strong>① 配方先行，包装后置。</strong>产品 30 分钟体温测试不通过——不上线。瓶子可以先极简（公模白瓶 + 标签），配方不能妥协。</p>
-    <p><strong>② 小批量起步，不囤货。</strong>首批 100–300 支——卖完再补。不为了"起订量优惠"多压库存。现金流比单价重要。</p>
-    <p><strong>③ 联名款降风险。</strong>如果独立品牌首批压力太大 → 和朋友品牌做联名款先行验证。品牌方出供应链，你出内容 + 审美。</p>
-    <p style="margin-bottom:0;"><strong>④ 内容 = 唯一的免费杠杆。</strong>你的内容能力是品牌最大的资产。每篇小红书在做的三件事：获客 + 建立信任 + 收集反馈。不需要付费投放。</p>
-  </div>
-
-  <h3>三、风险应对预案</h3>
+  <h3>风险应对预案</h3>
   <div class="table-wrap"><table>
     <tr><th>风险</th><th>概率</th><th>影响</th><th>预警信号</th><th>应对</th></tr>
-    <tr><td><strong>配方改不到位</strong></td><td>中</td><td>高</td><td>打样 V4 仍未通过 30 分钟体温盲测</td><td>延迟上线，不妥协。换调香师 / 基底方向。产品及格线 = 品牌生存线。</td></tr>
-    <tr><td><strong>竞品快速跟进</strong></td><td>高</td><td>中</td><td>冰希黎等品牌推"原生肤香"子线</td><td>不恋战速度，比拼品质。"伪体香金标准"= 产品力壁垒。靠创始人 IP + 香型矩阵应对。观夏 / 闻献不在此赛道。</td></tr>
-    <tr><td><strong>供应链品质波动</strong></td><td>低中</td><td>高</td><td>不同批次味道差异 > 用户可感知</td><td>建立"标准样本"封存制度。每批灌装前对照。储备 1–2 家备选工厂。</td></tr>
-    <tr><td><strong>化妆品备案延迟</strong></td><td>低</td><td>中</td><td>备案审核超 3 个月</td><td>配方冻结后第一时间送检，预留充足周期。备案期间可先做内容蓄水 + 私域积累。</td></tr>
-    <tr><td><strong>首批销售不达预期</strong></td><td>中</td><td>中</td><td>上线 30 天售罄率 < 50%</td><td>Plan B：回到联名款路径降验证成本。Plan A 不成立 = 独立品牌延后 ≠ 放弃。</td></tr>
+    <tr><td><strong>配方改不到位</strong></td><td>中</td><td>高</td><td>打样 V4 仍未通过 30 分钟体温盲测</td><td>延迟上线，不妥协。换调香师 / 基底方向。</td></tr>
+    <tr><td><strong>竞品快速跟进</strong></td><td>高</td><td>中</td><td>冰希黎等品牌推类似产品线</td><td>不恋战速度，比拼品质。"肤浮金标准"= 产品力壁垒。靠品类心智 + 香型矩阵 +「一日三香」叙事应对。</td></tr>
+    <tr><td><strong>供应链品质波动</strong></td><td>低中</td><td>高</td><td>不同批次味道差异 > 用户可感知</td><td>标准样本封存制度。每批灌装前对照。储备 1–2 家备选工厂。</td></tr>
+    <tr><td><strong>化妆品备案延迟</strong></td><td>低</td><td>中</td><td>备案审核超 3 个月</td><td>配方冻结后第一时间送检。备案期间先做内容蓄水 + 私域积累。</td></tr>
+    <tr><td><strong>首批销售不达预期</strong></td><td>中</td><td>中</td><td>上线 30 天售罄率 < 50%</td><td>Plan B：联名款路径降验证成本。</td></tr>
   </table></div>
+
+  <div class="highlight">
+    <h4 style="margin-top:0;">合规备注</h4>
+    <p style="margin-bottom:0;">「肤浮」为感官体验类描述，「一日三香」为产品叙事概念——均符合化妆品宣称规范，无合规风险。</p>
+  </div>
 
   <div class="highlight-green">
     <h4 style="margin-top:0;">P0 · 本周就能做的 3 件事</h4>
-    <p><strong>① 发"我决定做一个品牌"的第一篇小红书。</strong>"每次看你们买回来的伪体香都不对——不好闻、不伪体香。两个都不行。所以我来做。叫肌肤所生。"</p>
-    <p><strong>② 联系朋友品牌老板。</strong>"大哥，想找你聊聊。我想做原生肤香香水，方向想清楚了。工厂资源能介绍不？调香师有推荐吗？"</p>
-    <p style="margin-bottom:0;"><strong>③ 在下一篇约会香推荐里埋梗测反应。</strong>"最近在想——要不要自己做一支。叫肌肤所生。你们觉得呢？"——先测用户反应，不急着投钱。</p>
-  </div>
-</article>
-
-<div class="section-line"><span>Visual References</span></div>
-
-<!-- ═══════════ 视觉参考页：瓶身 · 品牌 · 场景 · 竞品 ═══════════ -->
-<article class="page" id="ref">
-  <span class="page-num">Reference Board</span>
-  <h2>品牌视觉参考板</h2>
-
-  <div class="conclusion-bar">以下所有参考均附搜索关键词，可直接在 Pinterest / 小红书 / Google Images 搜索找到原图。不提供外链（易失效），建议按关键词自行搜集高清大图后替换。</div>
-
-  <!-- ═══ 一、瓶身设计参考 ═══ -->
-  <h3>一、瓶身设计参考 — 极简·贴肤·克制</h3>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:20%">品牌</th><th>产品</th><th>设计关键词</th><th>对肌肤所生的启示</th><th>🔍 搜图关键词</th></tr>
-    <tr>
-      <td><strong>Byredo</strong></td>
-      <td>Blanche 纯白限定版</td>
-      <td>纯白瓶盖 · 无标签 · 透明玻璃 · 北欧极简 · "脱到最本质"</td>
-      <td>瓶身 = 不加修饰的皮肤。标签可以不要——让瓶子自己说话。黑帽换白帽 = "更干净一层"</td>
-      <td><code>Byredo Blanche collector edition white cap labelless</code></td>
-    </tr>
-    <tr>
-      <td><strong>Le Labo</strong></td>
-      <td>Another 13 / Santal 33</td>
-      <td>药房试剂瓶 · 手工标签 · 牛皮纸元素 · 工业感 · 现场打印个性化标签</td>
-      <td>"像刚从实验室拿出来的"——未完成的诚实感。标签可以手写风格、每瓶独一无二</td>
-      <td><code>Le Labo Another 13 bottle apothecary label product photography</code></td>
-    </tr>
-    <tr>
-      <td><strong>Glossier</strong></td>
-      <td>Glossier You</td>
-      <td>鹅卵石触感 · 粉色指节帽 · 暖调极简 · Instagram 友好 · 民主美妆</td>
-      <td>瓶子摸起来像皮肤——不是看着好看，是<strong>拿着不想放下</strong>。这就是肌肤所生的"磨砂软触涂层"</td>
-      <td><code>Glossier You perfume bottle pebble pink cap product photography</code></td>
-    </tr>
-    <tr>
-      <td><strong>Diptyque</strong></td>
-      <td>肌肤之花 Fleur de Peau</td>
-      <td>椭圆瓶身 · 黑白插画标签 · 巴黎左岸 · 肌肤麝香</td>
-      <td>标签的插画感——不是照片、不是图形，是<strong>手绘的、有温度的</strong></td>
-      <td><code>Diptyque Fleur de Peau bottle product shot</code></td>
-    </tr>
-    <tr>
-      <td><strong>Phlur</strong></td>
-      <td>Missing Person</td>
-      <td>彩色玻璃 · 裸肤色调 · 200,000 人候补名单 · TikTok 爆款</td>
-      <td>"皮肤的味道"可以被一瓶香水的颜色直接传达——肤色瓶身 = 视觉上的伪体香</td>
-      <td><code>Phlur Missing Person perfume bottle skin tone glass</code></td>
-    </tr>
-  </table></div>
-
-  <!-- ═══ 二、国产标杆品牌视觉 ═══ -->
-  <h3>二、国产标杆品牌视觉拆解</h3>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:15%">品牌</th><th>定位</th><th>瓶身设计特点</th><th>包装/视觉语言</th><th>肌肤所生应学 / 应避</th><th>🔍 搜图关键词</th></tr>
-    <tr>
-      <td><strong>观夏<br>To Summer</strong></td>
-      <td>东方艺术香氛<br>498–1598 元</td>
-      <td>八棱花窗瓶盖 · 景德镇白瓷 · 石头瓶盖（昆仑煮雪）· 握在手里有重量感</td>
-      <td>留白极大 · 中式克制 · 毛笔字 + 极简排版 · 线下四合院/洋房空间 = 品牌体验延伸</td>
-      <td>✅ 学：材质本身的质感就是设计；开箱像拆礼物<br>❌ 避：东方文化叙事——肌肤所生走当代身体护理路线</td>
-      <td><code>观夏 昆仑煮雪 香水 白瓷瓶盖 八棱花窗</code></td>
-    </tr>
-    <tr>
-      <td><strong>闻献<br>DOCUMENTS</strong></td>
-      <td>禅酷奢侈香氛<br>980–1750 元</td>
-      <td>榫卯结构瓶体 · 黑色"庙宇"概念店 · 银炭质感 · 建筑感极强</td>
-      <td>高对比黑白 · 中国 red/black 叙事 · "空无一木 VOID"= 磨砂玻璃如晨雾覆木</td>
-      <td>✅ 学：磨砂玻璃的"晨雾感"——和肌肤所生"清冷水汽"高度契合<br>❌ 避：太冷、太奢侈、太小众</td>
-      <td><code>闻献 DOCUMENTS 空无一木 VOID 磨砂瓶身</code></td>
-    </tr>
-    <tr>
-      <td><strong>melt season</strong></td>
-      <td>东方沙龙<br>780–1480 元</td>
-      <td>动态香型技术 · 上海太原路花园洋房 · 极简线条</td>
-      <td>温暖克制 · 自然哲学 · 但视觉辨识度不如观夏/闻献</td>
-      <td>✅ 学：线下空间 = 品牌体验<br>❌ 避：定价过高、受众太窄</td>
-      <td><code>melt season 香水 瓶身 包装 极简</code></td>
-    </tr>
-  </table></div>
-
-  <!-- ═══ 三、香水意向 · 人的场景 ═══ -->
-  <h3>三、香水意向 & 人物场景参考</h3>
-
-  <div class="highlight">
-    <h4 style="margin-top:0;">🎬 肌肤所生三大核心场景的视觉脚本</h4>
-    <p>以下每个场景都附了摄影关键词——用来找参考图、拍产品 KV、或 brief 摄影师。</p>
-  </div>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:18%">场景</th><th>画面描述</th><th>光线/色调</th><th>人物状态</th><th>🔍 搜图关键词</th></tr>
-    <tr>
-      <td><strong>约会前<br>最后一层</strong></td>
-      <td>女生站在梳妆台/镜子前，一手拿肌肤所生瓶子，一手整理头发。穿搭已完成、口红已涂好——这是出门前最后一个动作。镜子反射出窗外的晨光或傍晚的暖光。</td>
-      <td>侧逆自然光 · 水雾白 + 暖调肤色的渐变 · 高光在瓶身磨砂表面形成柔焦</td>
-      <td>松弛、确定、不赶时间——"可以了，出门。"嘴角有一点点对自己满意的弧度</td>
-      <td><code>woman mirror getting ready date perfume spray natural light editorial photography</code><br><code>女生 镜子前 喷香水 约会准备 侧逆光 氛围感</code></td>
-    </tr>
-    <tr>
-      <td><strong>他闻到<br>那个瞬间</strong></td>
-      <td>两人的距离——面对面坐着（咖啡厅/餐厅），或者他靠近她耳边说话。画面焦点不在人脸——在"靠近的距离"。他的侧脸、她的脖颈、空气里有看不见但能感受到的东西。</td>
-      <td>暖调暗光 · 烛光/黄昏 · 浅景深 · 焦点在皮肤/距离而非面部</td>
-      <td>不是"放电"——是"他愣了一下"。不是"你好香"——是"你是不是……本来就很好闻？"</td>
-      <td><code>couple intimate distance candlelight dinner skin close up editorial photography</code><br><code>男生靠近女生 闻到的瞬间 氛围感 浅景深 暧昧光线</code></td>
-    </tr>
-    <tr>
-      <td><strong>日常松弛美<br>一个人的好闻</strong></td>
-      <td>女生独自在家——刚洗完澡、裹着浴巾或穿着棉质睡裙。窗边有晨光。肌肤所生的瓶子在浴室台面上，旁边是水汽未散的镜子。或者她窝在沙发里，手腕靠近自己闻了一下——不是为了谁，是自己想闻。</td>
-      <td>清晨柔光 · 浴室蒸汽感 · 水雾白 + 棉质纹理 · 低饱和度</td>
-      <td>"今天又松弛又美。"不是约会前，不是为谁——就是今天。自己对自己满意。</td>
-      <td><code>woman morning routine bathroom natural light cotton robe self care editorial</code><br><code>女生 刚洗完澡 裹浴巾 窗边晨光 松弛感 摄影</code></td>
-    </tr>
-  </table></div>
-
-  <!-- ═══ 四、氛围 Moodboard ═══ -->
-  <h3>四、肌肤所生品牌 Moodboard 关键词矩阵</h3>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:15%">维度</th><th>视觉关键词</th><th>🔍 Pinterest / 小红书 搜索词</th></tr>
-    <tr><td><strong>色彩基调</strong></td><td>水雾白、冷调瓷白、极淡蓝调白、裸调肤色、磨砂半透明</td><td><code>white on white photography frosted glass soft light</code></td></tr>
-    <tr><td><strong>质感</strong></td><td>磨砂玻璃、软触涂层、棉质织物、皮肤纹理、水珠、蒸汽</td><td><code>frosted glass texture soft touch matte ceramic skin texture macro</code></td></tr>
-    <tr><td><strong>光影</strong></td><td>清晨薄雾光、浴室蒸汽柔光、逆光柔焦、窗纱过滤的自然光</td><td><code>morning mist soft light bathroom steam window light editorial</code></td></tr>
-    <tr><td><strong>情绪</strong></td><td>松弛、干净、不费力、温存、独处、确定感</td><td><code>effortless aesthetic clean girl skin minimal editorial calm</code></td></tr>
-    <tr><td><strong>构图</strong></td><td>大面积留白、浅景深、皮肤特写、镜子反射、不对称留白</td><td><code>negative space photography skin detail mirror reflection editorial</code></td></tr>
-    <tr><td><strong>竞品避雷</strong></td><td>NO金色奢华 · NO粉色甜腻 · NO巴洛克花纹 · NO霓虹灯效</td><td>——</td></tr>
-  </table></div>
-
-  <!-- ═══ 五、搜图工作流 ═══ -->
-  <div class="highlight-green">
-    <h4 style="margin-top:0;">📥 建议搜图流程</h4>
-    <p><strong>Step 1 · Pinterest</strong>：用英文关键词搜索 → 建一个 "肌肤所生 Moodboard" 画板 → Pin 30–50 张对的感觉的图</p>
-    <p><strong>Step 2 · 小红书</strong>：用中文关键词搜索 → 找国产香氛品牌的高赞笔记截图 → 分析"用户觉得好看的点在哪"</p>
-    <p><strong>Step 3 · 品牌官网</strong>：直接访问 Byredo / Le Labo / Glossier / 观夏 / 闻献官网 → 截图产品页、KV、详情页排版</p>
-    <p style="margin-bottom:0;"><strong>Step 4 · 整理入库</strong>：按"瓶身 / 包装 / KV / 场景 / 竞品"五个文件夹分类 → 设计师 brief 时直接丢文件夹</p>
+    <p><strong>① 发"我决定做一个品牌"的第一篇小红书。</strong>"每次看你们买回来的伪体香都不对。所以我来做。叫 FUFUSCENT 肤浮。"</p>
+    <p><strong>② 联系朋友品牌老板。</strong>"大哥，想找你聊聊。我想做肤浮式伪体香，方向想清楚了。工厂资源能介绍不？"</p>
+    <p style="margin-bottom:0;"><strong>③ 在下一篇约会香推荐里埋梗。</strong>"最近在想——要不要自己做一支。叫肤浮。你们觉得呢？"</p>
   </div>
 </article>
 
@@ -590,8 +413,8 @@
 </div>
 
 <footer class="site-footer">
-  <p>肌肤所生 Skinborn · 品牌全案策略 · 二〇二六年六月</p>
-  <p>基于《品牌全案策略指南 2.0》方法论</p>
+  <p>FUFUSCENT 肤浮 · 品牌全案策略 · 二〇二六年六月</p>
+  <p>香生肌理，轻浮于肤</p>
 </footer>
 
 </body>

@@ -94,6 +94,14 @@
   @media(max-width:600px) { .product-card .scent-row { grid-template-columns:1fr; } }
 
   .stars { color:#B8A070; letter-spacing:0.04em; white-space:nowrap; }
+  .ref-img { width:100%; border-radius:2px; margin:0.5rem 0; border:1px solid var(--rule); }
+  .ref-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1.5rem 0; }
+  .ref-grid.three { grid-template-columns:1fr 1fr 1fr; }
+  .ref-item { background:var(--surface); border:1px solid var(--rule); padding:1rem; }
+  .ref-item img { width:100%; border-radius:2px; margin-bottom:0.5rem; }
+  .ref-item p { font-size:0.8rem; color:var(--ink-light); margin:0; text-align:center; }
+  .ref-item h4 { margin:0.25rem 0; font-size:0.9rem; }
+  @media(max-width:600px){ .ref-grid,.ref-grid.three{grid-template-columns:1fr;} }
 
   .section-line { display:flex; align-items:center; gap:1.5rem; margin:4rem 0 3rem; }
   .section-line::before, .section-line::after { content:''; flex:1; height:1px; background:var(--rule); }
@@ -454,6 +462,12 @@
   <!-- ═══ 一、瓶身设计参考 ═══ -->
   <h3>一、瓶身设计参考 — 极简·贴肤·克制</h3>
 
+  <div class="ref-grid three">
+    <div class="ref-item"><img src="images/perfume-01.jpg" alt="极简香水瓶" loading="lazy"><h4>透明玻璃 · 极简标签</h4><p>Byredo / Le Labo 类参考</p></div>
+    <div class="ref-item"><img src="images/perfume-02.jpg" alt="白色磨砂香水瓶" loading="lazy"><h4>磨砂白瓶 · 克制留白</h4><p>观夏 / Glossier 类参考</p></div>
+    <div class="ref-item"><img src="images/perfume-03.jpg" alt="贴肤感香水瓶" loading="lazy"><h4>裸肤色瓶身 · 贴肤触感</h4><p>Phlur / Diptyque 类参考</p></div>
+  </div>
+
   <div class="table-wrap"><table>
     <tr><th style="width:20%">品牌</th><th>产品</th><th>设计关键词</th><th>对肤生的启示</th><th>🔍 搜图关键词</th></tr>
     <tr>
@@ -527,6 +541,12 @@
   <!-- ═══ 三、香水意向 · 人的场景 ═══ -->
   <h3>三、香水意向 & 人物场景参考</h3>
 
+  <div class="ref-grid three">
+    <div class="ref-item"><img src="images/mirror-ready.jpg" alt="女生镜子前准备约会" loading="lazy"><h4>约会前 · 最后一层</h4><p>镜子前穿搭+妆容搞定，喷香是最后一步</p></div>
+    <div class="ref-item"><img src="images/couple-close.jpg" alt="情侣靠近的瞬间" loading="lazy"><h4>他闻到 · 那个瞬间</h4><p>靠近的距离，空气里有看不见但能感受到的东西</p></div>
+    <div class="ref-item"><img src="images/morning-light.jpg" alt="早晨浴室自然光" loading="lazy"><h4>日常松弛美 · 一个人的好闻</h4><p>不为谁——今天就觉得自己又松弛又美</p></div>
+  </div>
+
   <div class="highlight">
     <h4 style="margin-top:0;">🎬 肤生三大核心场景的视觉脚本</h4>
     <p>以下每个场景都附了摄影关键词——用来找参考图、拍产品 KV、或 brief 摄影师。</p>
@@ -559,6 +579,13 @@
 
   <!-- ═══ 四、氛围 Moodboard ═══ -->
   <h3>四、肤生品牌 Moodboard 关键词矩阵</h3>
+
+  <div class="ref-grid">
+    <div class="ref-item"><img src="images/mist-fog.jpg" alt="水汽薄雾氛围" loading="lazy"><h4>清冷水汽 · 晨雾</h4><p>肤生嗅觉叙事开场</p></div>
+    <div class="ref-item"><img src="images/water-drop.jpg" alt="水珠皮肤纹理" loading="lazy"><h4>水珠 · 贴肤温度</h4><p>皮肤上若有似无的一层</p></div>
+    <div class="ref-item"><img src="images/skin-close.jpg" alt="皮肤纹理特写" loading="lazy"><h4>皮肤纹理 · 原生肌理</h4><p>白麝香与肌肤融合后的底色</p></div>
+    <div class="ref-item"><img src="images/woman-dress.jpg" alt="松弛美的女生" loading="lazy"><h4>松弛美 · 不费力</h4><p>"我很在意但我不想让你看出来"</p></div>
+  </div>
 
   <div class="table-wrap"><table>
     <tr><th style="width:15%">维度</th><th>视觉关键词</th><th>🔍 Pinterest / 小红书 搜索词</th></tr>

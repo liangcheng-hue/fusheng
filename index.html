@@ -3,252 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>肤生 SKINBORN · 品牌全案策略</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+SC:wght@300;400;500;600&family=Inter:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<title>肤生 Skinborn · 品牌全案策略</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+SC:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F9F8F6;
-    --surface: #FEFDFB;
-    --ink: #1C1C1C;
-    --ink-soft: #4A4A4A;
-    --ink-light: #8A8A86;
-    --rule: #E8E4DE;
-    --rule-light: #F0ECE6;
-    --wash: #F4F1EC;
-    --warm: #F7F3EE;
-    --mist: #EEECEA;
-    --accent: #B8A99A;
-    --accent-soft: #D6CDC3;
-    --radius: 2px;
+    --bg: #F9F8F6; --surface: #FEFDFB; --ink: #1C1C1C;
+    --ink-soft: #4A4A4A; --ink-light: #8A8A86; --rule: #E8E4DE;
+    --wash: #F4F1EC; --warm: #F7F3EE; --accent: #B8A99A; --accent-soft: #D6CDC3;
   }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
   body {
-    font-family: "Noto Serif SC", "Cormorant Garamond", Georgia, serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.9;
-    font-size: 15.5px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family:"Noto Serif SC","Cormorant Garamond",Georgia,serif;
+    background:var(--bg); color:var(--ink); line-height:1.9; font-size:15.5px;
+    -webkit-font-smoothing:antialiased;
   }
 
-  /* ═══ NAV BAR ═══ */
   .top-nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-    background: rgba(249,248,246,0.88); backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--rule); padding: 0 2rem;
+    position:fixed; top:0; left:0; right:0; z-index:200;
+    background:rgba(249,248,246,0.88); backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--rule); padding:0 2rem;
   }
-  .top-nav-inner {
-    max-width: 1200px; margin: 0 auto; display: flex; align-items: center;
-    justify-content: space-between; height: 56px;
+  .nav-inner {
+    max-width:1200px; margin:0 auto; display:flex; align-items:center;
+    justify-content:space-between; height:56px;
   }
-  .nav-brand { font-size: 1rem; font-weight: 500; letter-spacing: 0.06em; color: var(--ink); text-decoration: none; font-family: "Inter","Noto Serif SC",sans-serif; }
-  .nav-brand span { font-weight: 300; color: var(--ink-light); margin-left: 0.3em; font-size: 0.85rem; }
-  .nav-links { display: flex; gap: 1.75rem; list-style: none; font-family: "Inter","Noto Serif SC",sans-serif; font-size: 0.78rem; letter-spacing: 0.06em; }
-  .nav-links a { color: var(--ink-light); text-decoration: none; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--ink); }
+  .nav-brand { font-family:"Inter","Noto Serif SC",sans-serif; font-size:0.95rem; font-weight:500; letter-spacing:0.06em; color:var(--ink); text-decoration:none; }
+  .nav-brand span { font-weight:300; color:var(--ink-light); margin-left:0.3em; font-size:0.82rem; }
+  .nav-links { display:flex; gap:1.5rem; list-style:none; font-family:"Inter","Noto Serif SC",sans-serif; font-size:0.72rem; letter-spacing:0.08em; }
+  .nav-links a { color:var(--ink-light); text-decoration:none; transition:color 0.2s; }
+  .nav-links a:hover { color:var(--ink); }
 
-  /* ═══ HERO ═══ */
   .hero {
-    min-height: 100vh; display: flex; align-items: center; justify-content: center;
-    text-align: center; padding: 6rem 2rem 4rem; position: relative; overflow: hidden;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:6rem 2rem 4rem; position:relative; overflow:hidden;
   }
   .hero-bg {
-    position: absolute; inset: 0; pointer-events: none;
-    background:
-      radial-gradient(ellipse 80% 60% at 30% 45%, rgba(210,200,188,0.18) 0%, transparent 55%),
-      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(195,188,178,0.10) 0%, transparent 50%),
-      linear-gradient(180deg, #FCFAF7 0%, #F7F4EF 60%, #F4F0EA 100%);
+    position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 80% 60% at 30% 45%, rgba(210,200,188,0.15) 0%, transparent 55%),
+               radial-gradient(ellipse 60% 50% at 70% 50%, rgba(195,188,178,0.08) 0%, transparent 50%),
+               linear-gradient(180deg, #FCFAF7 0%, #F7F4EF 60%, #F4F0EA 100%);
   }
-  .hero-inner { position: relative; z-index: 1; max-width: 700px; }
-  .hero-rule { width: 40px; height: 1px; background: var(--accent); margin: 0 auto 3rem; }
-  .hero-eyebrow {
-    font-family: "Inter",sans-serif; font-size: 0.7rem; letter-spacing: 0.28em;
-    text-transform: uppercase; color: var(--ink-light); margin-bottom: 3rem;
-  }
-  .hero h1 {
-    font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-size: clamp(3.5rem, 8vw, 6.5rem); font-weight: 300;
-    letter-spacing: 0.06em; line-height: 1.1; margin-bottom: 0.5rem;
-  }
-  .hero .sub { font-size: 0.95rem; color: var(--ink-soft); letter-spacing: 0.1em; margin-bottom: 3rem; }
-  .hero .tagline {
-    display: inline-block; font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-style: italic; font-size: 1.25rem; color: var(--ink); letter-spacing: 0.05em;
-    padding: 1.25rem 0; border-top: 1px solid var(--accent-soft); border-bottom: 1px solid var(--accent-soft);
-  }
-  .hero .meta { margin-top: 3rem; font-family: "Inter",sans-serif; font-size: 0.72rem; color: var(--ink-light); letter-spacing: 0.1em; }
+  .hero-inner { position:relative; z-index:1; max-width:700px; }
+  .hero-rule { width:40px; height:1px; background:var(--accent); margin:0 auto 3rem; }
+  .hero-eyebrow { font-family:"Inter",sans-serif; font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--ink-light); margin-bottom:2.5rem; }
+  .hero h1 { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:clamp(3.5rem,8vw,6rem); font-weight:300; letter-spacing:0.06em; line-height:1.1; margin-bottom:0.4rem; }
+  .hero .sub { font-size:0.9rem; color:var(--ink-soft); letter-spacing:0.12em; margin-bottom:2.5rem; }
+  .hero .tagline { display:inline-block; font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic; font-size:1.2rem; color:var(--ink); letter-spacing:0.05em; padding:1.2rem 0; border-top:1px solid var(--accent-soft); border-bottom:1px solid var(--accent-soft); }
+  .hero .meta { margin-top:2.5rem; font-family:"Inter",sans-serif; font-size:0.7rem; color:var(--ink-light); letter-spacing:0.1em; }
 
-  /* ═══ CONTENT ═══ */
-  .content { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+  .content { max-width:740px; margin:0 auto; padding:2rem 2rem 6rem; }
 
-  .module { margin-bottom: 6rem; }
-  .module-num {
-    font-family: "Inter",sans-serif; font-size: 0.65rem; letter-spacing: 0.2em;
-    text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
-  }
-  .module h2 {
-    font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-size: 2.4rem; font-weight: 300; letter-spacing: 0.03em;
-    color: var(--ink); margin-bottom: 2rem; line-height: 1.25;
-  }
-  .module h3 {
-    font-size: 1.15rem; font-weight: 500; margin: 2.5rem 0 0.75rem;
-    color: var(--ink); letter-spacing: 0.02em;
-  }
-  .module h4 { font-size: 1rem; font-weight: 500; margin: 1.5rem 0 0.5rem; color: var(--ink); }
-  .module p { margin-bottom: 1rem; color: var(--ink-soft); }
-  .module p strong { color: var(--ink); font-weight: 500; }
-  .module em { font-family: "Cormorant Garamond","Noto Serif SC",serif; font-style: italic; color: var(--ink-light); font-size: 0.92rem; }
+  .page { margin-bottom:7rem; padding-top:1rem; }
+  .page-num { font-family:"Inter",sans-serif; font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem; }
+  .page h2 { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:2.3rem; font-weight:300; letter-spacing:0.03em; margin-bottom:1.75rem; line-height:1.25; }
+  .page h3 { font-size:1.1rem; font-weight:500; margin:2rem 0 0.6rem; color:var(--ink); }
+  .page h4 { font-size:0.98rem; font-weight:500; margin:1.5rem 0 0.4rem; color:var(--ink); }
+  .page p { margin-bottom:0.9rem; color:var(--ink-soft); }
+  .page p strong { color:var(--ink); font-weight:500; }
+  .page em { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-style:italic; color:var(--ink-light); font-size:0.9rem; }
 
-  /* ═══ DROP CAP ═══ */
-  .dropcap::first-letter {
-    float: left; font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-size: 4.5rem; line-height: 0.8; padding-right: 0.5rem;
-    padding-top: 0.3rem; color: var(--accent); font-weight: 300;
-  }
+  .conclusion-bar { background:var(--ink); color:#F9F8F6; padding:1rem 1.5rem; margin-bottom:2rem; font-weight:500; font-size:0.95rem; letter-spacing:0.03em; }
+  .conclusion-bar-light { background:var(--wash); padding:1rem 1.5rem; margin-bottom:2rem; font-weight:500; font-size:0.95rem; border-left:3px solid var(--accent); }
 
-  /* ═══ PULL QUOTE ═══ */
-  .pull-quote {
-    margin: 3rem 0; padding: 2.5rem 0; text-align: center;
-    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
-  }
-  .pull-quote p {
-    font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-size: 1.6rem; font-weight: 300; font-style: italic;
-    line-height: 1.5; color: var(--ink); letter-spacing: 0.03em;
-  }
-  .pull-quote .attribution {
-    font-family: "Inter",sans-serif; font-size: 0.7rem; letter-spacing: 0.15em;
-    text-transform: uppercase; color: var(--ink-light); margin-top: 1rem;
-  }
+  .highlight { background:var(--warm); padding:2rem; margin:1.5rem 0; border-left:2px solid var(--accent); }
+  .highlight-green { border-left-color:#9BAFA0; background:#F5F8F4; }
+  .highlight-warn { border-left-color:#C4A86A; background:#FDFAF4; }
 
-  /* ═══ BLOCKQUOTE ═══ */
-  blockquote {
-    border: none; padding: 2rem 2.5rem; margin: 2rem 0;
-    background: var(--wash); font-style: italic;
-    position: relative;
-  }
-  blockquote::before {
-    content: '"'; position: absolute; top: 0.5rem; left: 0.8rem;
-    font-family: "Cormorant Garamond",serif; font-size: 4rem;
-    color: var(--accent-soft); line-height: 1; font-style: normal;
-  }
-  blockquote strong { color: var(--ink); font-style: normal; }
-  blockquote p { color: var(--ink-soft); }
+  .card { background:var(--surface); padding:1.75rem; margin:1.5rem 0; border:1px solid var(--rule); }
+  .card h4 { margin-top:0; }
+  .card-accent { background:var(--wash); padding:1.75rem; margin:1.5rem 0; border:1px solid var(--rule); }
 
-  /* ═══ CARDS ═══ */
-  .card {
-    background: var(--surface); padding: 2rem; margin: 1.5rem 0;
-    border: 1px solid var(--rule); position: relative;
-  }
-  .card h4 { margin-top: 0; }
-  .card-accent { background: var(--wash); padding: 2rem; margin: 1.5rem 0; border: 1px solid var(--rule); }
+  .table-wrap { overflow-x:auto; margin:1.5rem 0; }
+  table { width:100%; border-collapse:collapse; font-size:0.84rem; font-family:"Inter","Noto Serif SC",sans-serif; }
+  th { font-weight:500; text-align:left; padding:0.55rem 0.9rem; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-light); border-bottom:2px solid var(--ink); }
+  td { padding:0.55rem 0.9rem; border-bottom:1px solid var(--rule); color:var(--ink-soft); vertical-align:top; }
+  tr:last-child td { border-bottom:none; }
+  td strong { color:var(--ink); }
 
-  .highlight-box {
-    background: var(--warm); padding: 2.5rem; margin: 2rem 0;
-    border-left: 2px solid var(--accent);
-  }
-  .highlight-box h4, .highlight-box h3 { margin-top: 0; }
-  .highlight-box-green { border-left-color: #9BAFA0; background: #F5F8F4; }
-  .highlight-box-warn { border-left-color: #C4A86A; background: #FDFAF4; }
+  pre { background:var(--surface); padding:1.5rem; margin:1.5rem 0; overflow-x:auto; font-size:0.76rem; line-height:1.7; border:1px solid var(--rule); font-family:"SF Mono","Cascadia Code","Consolas",monospace; color:var(--ink-soft); }
 
-  /* ═══ TABLES ═══ */
-  .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
-  table {
-    width: 100%; border-collapse: collapse; font-size: 0.85rem;
-    font-family: "Inter","Noto Serif SC",sans-serif;
-  }
-  th {
-    font-weight: 500; text-align: left; padding: 0.6rem 1rem;
-    font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--ink-light); border-bottom: 2px solid var(--ink);
-  }
-  td {
-    padding: 0.6rem 1rem; border-bottom: 1px solid var(--rule-light);
-    color: var(--ink-soft); vertical-align: top;
-  }
-  tr:last-child td { border-bottom: none; }
-  td strong { color: var(--ink); }
+  .pull-quote { margin:2.5rem 0; padding:2rem 0; text-align:center; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+  .pull-quote p { font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:1.4rem; font-weight:300; font-style:italic; line-height:1.5; color:var(--ink); }
+  .pull-quote .attr { font-family:"Inter",sans-serif; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-light); margin-top:0.8rem; }
 
-  /* ═══ PRE ═══ */
-  pre {
-    background: var(--surface); padding: 2rem; margin: 1.5rem 0; overflow-x: auto;
-    font-size: 0.78rem; line-height: 1.8; border: 1px solid var(--rule);
-    font-family: "SF Mono","Cascadia Code","Consolas",monospace;
-    color: var(--ink-soft);
-  }
+  .product-card { background:var(--surface); border:1px solid var(--rule); padding:2rem; margin:2rem 0; }
+  .product-card h3 { margin-top:0; font-family:"Cormorant Garamond","Noto Serif SC",serif; font-size:1.6rem; font-weight:300; }
+  .product-card .scene { font-size:0.9rem; color:var(--ink-light); margin-bottom:1.25rem; }
+  .product-card .scent-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin:1rem 0; }
+  @media(max-width:600px) { .product-card .scent-row { grid-template-columns:1fr; } }
 
-  /* ═══ STARS ═══ */
-  .stars { color: #B8A070; letter-spacing: 0.04em; white-space: nowrap; }
+  .stars { color:#B8A070; letter-spacing:0.04em; white-space:nowrap; }
 
-  /* ═══ DIVIDER ═══ */
-  .ornament { text-align: center; padding: 3rem 0; }
-  .ornament span { color: var(--accent-soft); font-size: 0.5rem; letter-spacing: 0.4em; }
+  .section-line { display:flex; align-items:center; gap:1.5rem; margin:4rem 0 3rem; }
+  .section-line::before, .section-line::after { content:''; flex:1; height:1px; background:var(--rule); }
+  .section-line span { font-family:"Inter",sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-light); white-space:nowrap; }
 
-  .section-divider {
-    text-align: center; padding: 2rem 0; margin: 2rem 0 4rem;
-    position: relative;
-  }
-  .section-divider::before {
-    content: ''; position: absolute; left: 0; right: 0; top: 50%;
-    height: 1px; background: var(--rule);
-  }
-  .section-divider span {
-    position: relative; display: inline-block; padding: 0.4rem 2rem;
-    background: var(--bg); font-family: "Inter",sans-serif;
-    font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--ink-light);
-  }
+  .site-footer { text-align:center; padding:3rem 2rem; color:var(--ink-light); font-family:"Inter",sans-serif; font-size:0.7rem; letter-spacing:0.08em; border-top:1px solid var(--rule); }
 
-  /* ═══ CENTERED HIGHLIGHT ═══ */
-  .centered-quote {
-    text-align: center; padding: 4rem 1rem; margin: 3rem 0;
+  @media(max-width:700px) {
+    .nav-links { display:none; }
+    .hero h1 { font-size:2.5rem; }
+    .content { padding:1.5rem 1rem 4rem; }
+    .page h2 { font-size:1.7rem; }
+    table { font-size:0.7rem; }
+    th,td { padding:0.35rem 0.4rem; }
   }
-  .centered-quote h3 {
-    font-family: "Cormorant Garamond","Noto Serif SC",serif;
-    font-size: 2rem; font-weight: 300; font-style: italic;
-    letter-spacing: 0.04em; margin-bottom: 1rem; color: var(--ink);
-  }
-
-  /* ═══ FOOTER ═══ */
-  .site-footer {
-    text-align: center; padding: 4rem 2rem; color: var(--ink-light);
-    font-family: "Inter",sans-serif; font-size: 0.72rem; letter-spacing: 0.08em;
-    border-top: 1px solid var(--rule);
-  }
-  .site-footer p { margin-bottom: 0.2rem; }
-
-  /* ═══ RESPONSIVE ═══ */
-  @media (max-width: 700px) {
-    .nav-links { display: none; }
-    .hero h1 { font-size: 2.8rem; }
-    .content { padding: 1.5rem 1.25rem 4rem; }
-    .module h2 { font-size: 1.8rem; }
-    table { font-size: 0.72rem; }
-    th, td { padding: 0.4rem 0.5rem; }
-  }
-
   @media print {
-    .top-nav { display: none; }
-    body { font-size: 11px; background: white; }
-    .hero { min-height: auto; padding: 2rem 0; }
+    .top-nav { display:none; }
+    body { font-size:11px; background:white; }
+    .hero { min-height:auto; padding:2rem 0; }
+    .page { page-break-inside:avoid; }
   }
 </style>
 </head>
 <body>
 
 <nav class="top-nav">
-  <div class="top-nav-inner">
-    <a href="#" class="nav-brand">肤生 SKINBORN<span>Brand Strategy</span></a>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">肤生 Skinborn<span>Brand Strategy</span></a>
     <ul class="nav-links">
-      <li><a href="#m3">市场调研</a></li>
-      <li><a href="#m9">战略定位</a></li>
-      <li><a href="#m18">战略执行</a></li>
-      <li><a href="#m27">附录</a></li>
+      <li><a href="#p1">核心摘要</a></li>
+      <li><a href="#p2">品牌定位</a></li>
+      <li><a href="#p3">产品体系</a></li>
+      <li><a href="#p4">市场竞品</a></li>
+      <li><a href="#p5">用户画像</a></li>
+      <li><a href="#p6">冷启动</a></li>
+      <li><a href="#p7">预算风险</a></li>
     </ul>
   </div>
 </nav>
@@ -257,508 +138,300 @@
   <div class="hero-bg"></div>
   <div class="hero-inner">
     <div class="hero-rule"></div>
-    <p class="hero-eyebrow">Brand Strategy Blueprint · Vol. I</p>
+    <p class="hero-eyebrow">Brand Strategy Blueprint</p>
     <h1>肤生</h1>
     <p class="sub">S K I N B O R N</p>
-    <p class="tagline">"约会前的最后一层。"</p>
-    <p class="meta">二〇二六年六月 · 品牌全案策略指南</p>
+    <p class="tagline">"肤香天生，无需刻意。"</p>
+    <p class="meta">二〇二六年六月 · 品牌全案策略</p>
   </div>
 </section>
 
 <div class="content">
 
-<article class="module" id="m3">
-  <span class="module-num">Chapter 01</span>
-  <h2>生态位定义</h2>
+<!-- ═══════════ 第1页：项目核心摘要 ═══════════ -->
+<article class="page" id="p1">
+  <span class="page-num">Page 01</span>
+  <h2>项目核心摘要</h2>
 
-  <div class="highlight-box">
-    <h4>生态位 = 伪体香需求 ∩ 约会场景 ∩ 香水博主审美判断力</h4>
-    <p style="margin-bottom:0;">市场空白 · 用户需求 · 自身能力——三圆交集处即为肤生的战略锚点。</p>
+  <div class="conclusion-bar">肤生 Skinborn —— 原生肤感香氛品牌。像皮肤自己透出来的原生体香，半米外像没喷，贴身闻清润自然。</div>
+
+  <div class="table-wrap"><table>
+    <tr><th style="width:22%">维度</th><th>结论</th></tr>
+    <tr><td><strong>赛道选择</strong></td><td>切入200–300元「原生肤香」垂直赛道。50–150元平价伪体香个护已是红海；200–400元区间尚无品牌独占"无香水感原生体香"心智。</td></tr>
+    <tr><td><strong>品牌定位</strong></td><td>品类占位型。心智占位：像皮肤自己透出来的原生体香。英文名 Skinborn（肌肤所生）。品牌级 slogan：肤香天生，无需刻意。</td></tr>
+    <tr><td><strong>首发产品</strong></td><td>三款滚珠香氛油，共享统一贴肤香基，全系列达标"伪体香金标准"。正装 200–300 元，试香装 9.9 元。</td></tr>
+    <tr><td><strong>目标用户</strong></td><td>20–26 岁一二线城市精致女性，月可支配收入 3000–8000 元。购买动机：自我愉悦 ＞ 社交细节加分 ＞ 异性好感。</td></tr>
+    <tr><td><strong>冷启动</strong></td><td>小红书为核心阵地。"约会伪体香"承接搜索流量 → 逐步传递"原生肤香"品牌内核。内容比例：70% 场景种草 + 30% 品牌心智。</td></tr>
+    <tr><td><strong>启动预算</strong></td><td>&lt;10 万。调香打样 + 首批大货优先，包材占比控制在 15% 以内。</td></tr>
+    <tr><td><strong>创始人优势</strong></td><td>小红书香水博主（~1万粉丝），内容能力极强（周更3篇零成本），供应链通路（朋友品牌→工厂）。</td></tr>
+  </table></div>
+</article>
+
+<div class="section-line"><span>Page 02</span></div>
+
+<!-- ═══════════ 第2页：品牌底层定位 ═══════════ -->
+<article class="page" id="p2">
+  <span class="page-num">Page 02</span>
+  <h2>品牌底层定位</h2>
+
+  <div class="conclusion-bar">品类占位型 —— "原生肤感香氛"品类没有领导品牌。第一个站出来的品牌定义这个品类。</div>
+
+  <div class="highlight">
+    <h4 style="margin-top:0;">生态位公式</h4>
+    <p style="margin-bottom:0;"><strong>原生体香需求 ∩ 伪体香搜索流量 ∩ 香水博主审美判断力</strong></p>
   </div>
 
   <div class="table-wrap"><table>
-    <tr><th style="width:25%">维度</th><th>核心信号</th></tr>
-    <tr><td>伪体香需求</td><td>小红书 10 亿浏览 · 2026 年爆发概念 · 从香水向个护全品类下沉</td></tr>
-    <tr><td>约会场景</td><td>香水第一大使用场景 · 46% 需求占比 · 搜索量暴增 97%</td></tr>
-    <tr><td>博主审美判断力</td><td>闻过几百支香 · 精准知道"差在哪" · 唯一香水 + 情感交叉博主</td></tr>
+    <tr><th style="width:22%">要素</th><th>确认内容</th></tr>
+    <tr><td>定位方法</td><td><strong>切割 · 品类占位型</strong>。对标案例：小仙炖——"鲜炖燕窝，就选小仙炖"= 品类 + 品牌绑定。</td></tr>
+    <tr><td>心智占位</td><td>"像皮肤自己透出来的原生体香。"不抢香水赛道心智，不参与"约会斩男"话术竞争。</td></tr>
+    <tr><td>品牌名</td><td><strong>肤生 Skinborn</strong>（连写）。内核：肌肤所生——不是喷上去的，是皮肤自己长出来的味道。六维评分 28/30。</td></tr>
+    <tr><td>品牌级 Slogan</td><td><strong>"肤香天生，无需刻意。"</strong></td></tr>
+    <tr><td>产品级 Slogan</td><td><strong>"没有香水感的原生体香。半米外像没喷，贴身闻清润自然。"</strong></td></tr>
+    <tr><td>品牌原型</td><td><strong>照顾者 Caregiver</strong>——关怀、守护、不抢戏。"约会最强辅助"。</td></tr>
+    <tr><td>使命</td><td>"让每一个女生——喷香这件事，不需要想。"</td></tr>
+    <tr><td>价值观</td><td>① 她的感受，不是他的偏好 ② 自信是被提醒的，不是被创造的</td></tr>
+    <tr><td>视觉方向</td><td>清冷水汽→贴肤温度。色彩：水雾白、冷调瓷白、极淡裸调。瓶身：磨砂软触（摸起来像皮肤）。避雷：安娜苏式装饰、粉甜风。</td></tr>
+    <tr><td>品牌故事</td><td>男生香水博主，看着女生买回来的"伪体香"不好闻 + 不伪体香。两个都不对。市面上没有。所以来做。</td></tr>
   </table></div>
-
-  <blockquote>
-    <p><strong>一句话生态位定义：</strong>"中国第一个为约会场景而生的身体香雾品牌。"</p>
-  </blockquote>
-
-  <div class="highlight-box highlight-box-green">
-    <h4>🟢 信号强度：强信号</h4>
-    <p style="margin-bottom:0;">市场空白（200–400 元无人占据）+ 用户需求（搜索暴增无品牌供给）+ 自身能力（周更 3 篇零成本 + 1 万精准粉丝 + 供应链通路）。三圆高度重合——<strong>生态位确认，可快速推进。</strong></p>
-  </div>
-</article>
-
-<article class="module" id="m4">
-  <span class="module-num">Chapter 02</span>
-  <h2>PESTEL 宏观环境分析</h2>
-
-  <div class="table-wrap"><table>
-    <tr><th>维度</th><th>核心信号</th><th style="width:12%">强度</th></tr>
-    <tr><td><strong>P · 政策</strong></td><td>化妆品合规门槛提升利好品牌化；"伪体香"属感官描述，合规风险低。<br><em>[来源: 国家药监局 2021]</em></td><td class="stars">★★★</td></tr>
-    <tr><td><strong>E · 经济</strong></td><td>2025 年香水市场约 300 亿元，连续 5 年 18%+ 增速。200–400 元处于"轻奢犒赏"甜区。<br><em>[来源: 艾媒咨询; 欧睿]</em></td><td class="stars">★★★★</td></tr>
-    <tr><td><strong>S · 社会</strong></td><td>73% 消费者以香气调节情绪。"松弛美"成为核心审美。"伪体香"2026 年爆发——"不是喷了香水，是我本来就很好闻"。<br><em>[来源: 小红书 2025 趋势图鉴]</em></td><td class="stars">★★★★★</td></tr>
-    <tr><td><strong>T · 技术</strong></td><td>微胶囊锁香技术普及 + 国产供应链成熟。白麝香基底成熟度最高，"现有配方改"路径可行。<br><em>[来源: 行业公开技术报道]</em></td><td class="stars">★★★★</td></tr>
-  </table></div>
-  <p><strong>核心结论：</strong>四维信号整体利好——社会维度（伪体香爆发）和技术维度（供应链成熟）为肤生提供了结构性启动窗口。</p>
-</article>
-
-<article class="module" id="m5">
-  <span class="module-num">Chapter 03</span>
-  <h2>行业趋势与市场机会窗口</h2>
-
-  <h3>300 亿香水市场以 18%+ 增速狂奔——国产香氛仅占 3%</h3>
-  <p class="dropcap">2025 年约 300 亿元，2029 年预计 515 亿元。国际品牌占 82%，国际沙龙占 15%，国产品牌仅约 3%。不是"红海"——是<strong>"蓝海但有大鲨鱼"</strong>。肤生要做的是大牌不做的事：约会身体香雾这个新品类。<br><em>[来源: 颖通集团 2024 白皮书]</em></p>
 
   <div class="pull-quote">
-    <p>"伪体香：10 亿浏览的超级概念，等待第一个品牌来认领。"</p>
-    <p class="attribution">—— 2026 年小红书趋势数据</p>
-  </div>
-
-  <p>冰希黎"浪漫天使"有产品无品牌、隐衫之欲方向对但未品牌化、国际沙龙香定价 1000+ 面向小众。<strong>肤生的窗口：200–400 元，用完整品牌把这个品类占住。</strong></p>
-
-  <div class="highlight-box highlight-box-green">
-    <h4>📊 五大趋势信号</h4>
-    <div class="table-wrap"><table>
-      <tr><th>趋势</th><th>信号</th><th>肤生的机会</th></tr>
-      <tr><td>香氛高速增长</td><td>300 亿→515 亿，CAGR 18%+</td><td>大盘在涨，新品有增量</td></tr>
-      <tr><td>伪体香爆发</td><td>10 亿+ 浏览</td><td>概念已验证，品牌窗口打开</td></tr>
-      <tr><td>约会场景强劲</td><td>46% 占比，97% 增速</td><td>场景精准，用户已有搜索习惯</td></tr>
-      <tr><td>品类空白</td><td>200–400 元无品牌</td><td>抢先定义 = 抢占心智</td></tr>
-      <tr><td>国货占比极低</td><td>仅 3%</td><td>竞争不在国货内部</td></tr>
-    </table></div>
+    <p>"没有香水感的原生体香。<br>半米外像没喷，贴身闻清润自然。"</p>
+    <p class="attr">—— 肤生 Skinborn 产品级承诺</p>
   </div>
 </article>
 
-<article class="module" id="m6">
-  <span class="module-num">Chapter 04</span>
-  <h2>竞争格局全景分析</h2>
+<div class="section-line"><span>Page 03</span></div>
 
+<!-- ═══════════ 第3页：首发三款产品体系 ═══════════ -->
+<article class="page" id="p3">
+  <span class="page-num">Page 03</span>
+  <h2>首发产品体系 · 统一伪体香标准</h2>
+
+  <div class="conclusion-bar">全系列共享统一贴肤香基，三款均适配"伪体香"营销逻辑，覆盖不同约会场景。产品形态：滚珠香氛油。正装 200–300 元，试香装 9.9 元。</div>
+
+  <h3>一、全系列统一伪体香标准（品牌底线，三款 100% 达标）</h3>
   <div class="table-wrap"><table>
-    <tr><th>圈层</th><th>品牌 / 产品</th><th>定位</th><th style="width:35%">核心缺陷</th></tr>
-    <tr><td rowspan="2"><strong>直接竞品</strong></td><td>隐衫之欲</td><td>贴肤暧昧香 · ~300 元</td><td>瓶子无惊喜 · 非品牌 · 与真伪体香有差距</td></tr>
-    <tr><td>冰希黎 · 浪漫天使</td><td>"约会伪体香" · ~200 元</td><td>产品名非品牌 · 视觉偏甜美 · 未品牌化</td></tr>
-    <tr><td rowspan="3"><strong>品类对标</strong></td><td>观夏</td><td>东方艺术香氛 · 498–1598 元</td><td>东方文化叙事，不聚焦约会场景</td></tr>
-    <tr><td>闻献</td><td>禅酷奢侈香氛 · 980–1750 元</td><td>高冷奢侈，与"松弛美"方向相反</td></tr>
-    <tr><td>melt season</td><td>东方沙龙 · 780–1480 元</td><td>艺术沙龙路线，非大众约会场景</td></tr>
-    <tr><td rowspan="2"><strong>场景竞品</strong></td><td>斩男色口红</td><td>约会吸引力品类</td><td>互补而非替代——增加一个"约会准备"维度</td></tr>
-    <tr><td>约会穿搭</td><td>约会准备仪式</td><td>肤生 = 穿搭搞定后的"最后一层"</td></tr>
+    <tr><th style="width:22%">标准</th><th>具体要求</th></tr>
+    <tr><td><strong>① 无冲击感</strong></td><td>低酒精配方，上身无刺鼻冲感。10 分钟内完全与角质层融合，无"刚喷完香水"的突兀边界。</td></tr>
+    <tr><td><strong>② 晕染式散香</strong></td><td>香味呈晕染状附着在皮肤表层。像捧花一天染上的气息、逛森林沾到的露水感——非喷洒式集中香源。</td></tr>
+    <tr><td><strong>③ 留香尺度</strong></td><td>贴身有效留香 6–8 小时。30cm 近距离闻清润不齁，1m 距离悠悠可闻，社交距离不刻意不扰人。</td></tr>
+    <tr><td><strong>④ 伪体香金标准</strong></td><td>盲测场景下，多数人无法精准分辨是香水还是原生体香。男性高频反馈「你本身就很好闻」——而非「你香水很好闻」。</td></tr>
   </table></div>
 
-  <div class="card-accent">
-    <h4>📍 竞品定位二维图</h4>
-    <pre>        高价位 (500+)
-            │  闻献 · 禅酷 / 观夏 · 东方艺术 / melt season · 沙龙
-            │
-            │           ★ 肤生 SKINBORN  200–400 元
-            │              "约会身体香雾" ← 此坐标无人占据
-            │
-            │  冰希黎 · 浪漫天使 / 隐衫之欲
-            │  名创优品 / Bath & Body Works
-        低价位 (15–100)
-            └────────────────────────────────
-          东方 / 文化叙事              场景 / 情感驱动</pre>
-  </div>
-  <p><strong>关键发现：</strong>200–400 元、"约会场景 + 身体香雾"坐标点上<strong>目前没有人</strong>。肤生有机会成为第一个落子的品牌。</p>
-</article>
+  <h3>二、首发三款香型详情</h3>
 
-<article class="module" id="m7">
-  <span class="module-num">Chapter 05</span>
-  <h2>目标用户深度画像</h2>
-
-  <div class="card">
-    <h4>核心用户画像："小A"</h4>
-    <p style="font-style:italic;">"约会前在镜子前犹豫穿什么——但有一件事她不想犹豫：今天闻起来像什么。"</p>
-    <div class="table-wrap"><table>
-      <tr><th style="width:18%">维度</th><th>详情</th></tr>
-      <tr><td>基础属性</td><td>22 岁，一线城市，大四 / 实习期，月生活费 1500–2500 元</td></tr>
-      <tr><td>消费行为</td><td>小红书种草→线上购买（88.93%）。200–400 元 = 轻奢犒赏。64% 偏爱小样</td></tr>
-      <tr><td>心理特征</td><td>"我很在意但我不想让你看出来我很在意"——松弛美审美</td></tr>
-      <tr><td>核心痛点</td><td><strong>① 约会前的"试错困境"</strong>：穿衣服不能每件都试、口红不能每支都涂——香水也是。她需要一个"闭眼喷就对了"的默认选项。<br><strong>② 被烂产品辜负</strong>：买回来的伪体香不好闻 + 不伪体香。</td></tr>
-      <tr><td>媒介触点</td><td>小红书 = 主要信息源，博主推荐 > 品牌广告</td></tr>
-    </table></div>
+  <!-- 香型1 -->
+  <div class="product-card">
+    <h3>香型一 · ________</h3>
+    <p class="scene">核心场景：刚沐浴完的清冷少女肤感</p>
+    <p><strong>画面锚点：</strong>浴室水汽未散，栀子花香混着洁净肤感，易碎又有韧劲的疏离感。</p>
+    <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
+    <div class="scent-row">
+      <div><strong>顶层气息</strong><br>极淡蒸馏水汽 + 栀子花瓣露感。仅上身 10 分钟内可捕捉清冽感。</div>
+      <div><strong>中层融合</strong><br>柔润洁净皂感 + 薄透栀子花香。如水汽裹着花香渗进皮肤，无甜腻感。</div>
+      <div><strong>基底肤香</strong><br>高纯度白麝香 + 柔肤内酯。与肌肤完全贴合，最终留存的原生体香底色。</div>
+    </div>
+    <div class="highlight-green" style="margin-bottom:0;">
+      <strong>伪体香营销锚点：</strong>初次约会清冷氛围感神器。凑近闻像刚洗完澡的干净体香。男生只会觉得你天生自带洁净感——完全想不到是喷了香氛。
+    </div>
   </div>
 
-  <div class="pull-quote">
-    <p>"衣服换两套、口红试三支——她已经没有时间也没有精力再去'试香'了。<br>她需要的不是'今天喷哪支'，而是'喷了就对了'。"</p>
-    <p class="attribution">—— 肤生用户洞察</p>
+  <!-- 香型2 -->
+  <div class="product-card">
+    <h3>香型二 · ________</h3>
+    <p class="scene">核心场景：带绿意的清甜少女肤感</p>
+    <p><strong>画面锚点：</strong>穿绿纱裙跑过果园草地，青苹果脆甜混着草叶露水，沾在皮肤上的鲜活气息。</p>
+    <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
+    <div class="scent-row">
+      <div><strong>顶层气息</strong><br>极淡青苹果脆感 + 嫩草叶尖绿意。酸大于甜，无果调香水的齁甜感。</div>
+      <div><strong>中层融合</strong><br>柔和青草水汽 + 淡苹果皮清香。像风裹着果香扫过皮肤——"染上"而非"喷上"。</div>
+      <div><strong>基底肤香</strong><br>统一白麝香汤底。果绿意锁在肤感里，甜而不飘，鲜活不跳脱。</div>
+    </div>
+    <div class="highlight-green" style="margin-bottom:0;">
+      <strong>伪体香营销锚点：</strong>户外约会 / 夏日专属。男生会觉得你自带清甜少女感——像刚吃完苹果、逛完公园的自然气息，完全不刻意。
+    </div>
   </div>
 
-  <h3>用户旅程 · 情绪曲线</h3>
-  <pre>认知(+2)  →  考虑(-1)  →  购买(+3)  →  使用(+1)  →  推荐(+5★)
-  好奇         纠结太多        "终于有       出门前        "对了！"
-  刷到伪体香    不知信谁        人懂了"       的确认       他闻到了
-
-情绪最低点："考虑"——太多选择不知道信谁。
-情绪最高点："推荐"——"他闻到了"+"他说了那句话"。</pre>
-
-  <div class="highlight-box">
-    <h4>🔑 核心洞察：女生约会前的"试错困境"</h4>
-    <p>穿衣服——不能站在衣柜前把每件都试一遍。口红——不能把每个色号都涂一遍再擦掉。一个女生约会前在镜子前能试的东西就那么多：<strong>衣服换两套、口红试三支——她已经没有精力再去"试香"了。</strong></p>
-    <p>她需要一个<strong>"不出错"的默认选项</strong>。衣服可以纠结、口红可以犹豫——但当她拿起肤生的时候，这件事不用想。</p>
-    <p style="margin-bottom:0;"><strong>这就是肤生存在的理由：在她所有需要做决定的时刻里，至少有一件事是确定的。</strong></p>
+  <!-- 香型3 -->
+  <div class="product-card">
+    <h3>香型三 · ________</h3>
+    <p class="scene">核心场景：晨起被窝里的软嫩少女肤感</p>
+    <p><strong>画面锚点：</strong>阳光晒过的棉被里，刚睡醒的女生，皮肤带着软乎乎的奶绒感，干净又娇嫩。</p>
+    <p><strong>香调层次（无突兀三调，全程平缓融合）</strong></p>
+    <div class="scent-row">
+      <div><strong>顶层气息</strong><br>极淡阳光暖感 + 棉麻纤维气息。像晒过太阳的被子蹭在皮肤上的温度。</div>
+      <div><strong>中层融合</strong><br>婴儿般淡奶感 + 极柔花香底蕴。奶味淡到几乎无，仅留存软嫩肤感联想，无齁感。</div>
+      <div><strong>基底肤香</strong><br>暖调白麝香 + 柔肤内酯。暖而不闷，软而不腻——皮肤本身透出来的软嫩质感。</div>
+    </div>
+    <div class="highlight-green" style="margin-bottom:0;">
+      <strong>伪体香营销锚点：</strong>近距离亲密接触绝杀。抱起来是软乎乎的干净奶感。男生会以为你天生皮肤就带着甜香——毫无人工痕迹。
+    </div>
   </div>
-</article>
 
-<article class="module" id="m8">
-  <span class="module-num">Chapter 06</span>
-  <h2>SWOT 自身诊断与生态位匹配验证</h2>
-
+  <h3>三、产品基础设定</h3>
   <div class="table-wrap"><table>
-    <tr><th>S · 优势</th><th>W · 劣势</th></tr>
-    <tr><td>创始人 = 香水博主，专业信任 <span class="stars">★★★★★</span></td><td>Solo founder，精力瓶颈</td></tr>
-    <tr><td>"香水 + 情感"唯一交叉内容定位 <span class="stars">★★★★★</span></td><td>无美学设计能力，需从零找</td></tr>
-    <tr><td>1 万精准粉丝，画像与用户重合</td><td>无粉丝群 / 私域资产积累</td></tr>
-    <tr><td>内容极强（周更 3 篇 · 零成本） <span class="stars">★★★★★</span></td><td>供应链未直接接触</td></tr>
-    <tr><td>朋友品牌→工厂通路</td><td>预算 &lt;10 万，极简启动</td></tr>
-  </table></div>
-
-  <h3>TOWS 交叉策略</h3>
-  <div class="table-wrap"><table>
-    <tr><th>策略</th><th>核心动作</th></tr>
-    <tr><td><strong>S×O 进攻</strong></td><td>博主 IP 加速品类占位；"香水+情感" = 最大壁垒（竞品能抄产品，抄不了审美判断力）</td></tr>
-    <tr><td><strong>W×T 防御</strong></td><td>加速 IP 建人格壁垒；瓶子设计 = 物理壁垒；单品打透、私域起量</td></tr>
-    <tr><td><strong>S×T 转化</strong></td><td>联名款先验证降踩坑成本；不恋战速度比拼品质</td></tr>
-    <tr><td><strong>W×O 补强</strong></td><td>博主审美精准 brief 设计师；先建私域再卖货；从"观察女生被辜负"切入</td></tr>
+    <tr><th style="width:25%">维度</th><th>设定</th></tr>
+    <tr><td><strong>核心形态</strong></td><td>滚珠香氛油（贴肤融合度最高，最适配原生体香体验）</td></tr>
+    <tr><td><strong>定价策略</strong></td><td>正装 200–300 元区间；配套 9.9 元试香装降低试错成本</td></tr>
+    <tr><td><strong>包装原则</strong></td><td>极简贴肤感设计，包材成本占比控制在 15% 以内，优先保障调香品质</td></tr>
+    <tr><td><strong>初期策略</strong></td><td>MVP 阶段首发三款，不做更多 SKU。0–6 个月验证单品穿透力。</td></tr>
   </table></div>
 </article>
 
-<div class="section-divider"><span>Part II · 战略定位篇</span></div>
+<div class="section-line"><span>Page 04</span></div>
 
-<article class="module" id="m9">
-  <span class="module-num">Chapter 07</span>
-  <h2>定位方法选择与推导</h2>
+<!-- ═══════════ 第4页：市场与竞品分析 ═══════════ -->
+<article class="page" id="p4">
+  <span class="page-num">Page 04</span>
+  <h2>市场与竞品分析</h2>
 
-  <div class="highlight-box">
-    <h4>品类占位型胜出</h4>
-    <p style="margin-bottom:0;">"约会身体香雾"没有领导品牌——先占先得。第一个站出来的品牌就是品类本身。</p>
-  </div>
+  <div class="conclusion-bar">50–150 元平价伪体香个护是红海；200–400 元"无香水感原生肤香"垂直赛道是心智蓝海。</div>
 
+  <h3>市场分层判断</h3>
   <div class="table-wrap"><table>
-    <tr><th>方法</th><th>匹配度</th><th>判断</th></tr>
-    <tr><td><strong>切割 · 品类占位型</strong></td><td>✅ 品类无龙头 + 需求明确</td><td><strong>✅ 推荐</strong></td></tr>
-    <tr><td>对立 · 竞争对立型</td><td>❌ 没有明确的"敌人"可对打</td><td>不选</td></tr>
-    <tr><td>情绪 · 情感价值型</td><td>⚠️ 成立但更适合做表达方式</td><td>备选</td></tr>
-    <tr><td>意义 · 价值主张型</td><td>❌ 用户非价值观驱动</td><td>不选</td></tr>
+    <tr><th style="width:18%">层级</th><th>代表</th><th>价格带</th><th>竞争烈度</th><th>肤生位置</th></tr>
+    <tr><td><strong>平价伪体香个护</strong></td><td>冰希黎 · 浪漫天使、隐衫之欲、名创优品香体喷雾</td><td>50–150 元</td><td>🔴 红海——大量品牌涌入，小红书种草密集，用户已审美疲劳</td><td>不参与。肤生不走平价路线。</td></tr>
+    <tr><td><strong>原生肤香（空白带）</strong></td><td>目前无品牌明确占据</td><td><strong>200–400 元</strong></td><td>🟢 心智蓝海——有搜索需求（"伪体香"10 亿+ 浏览），无品牌独占"无香水感"心智</td><td><strong>★ 肤生主战场</strong></td></tr>
+    <tr><td><strong>入门沙龙香 / 大牌小样</strong></td><td>Diptyque 肌肤之花、Le Labo Another 13、观夏</td><td>500–1500 元</td><td>🟡 间接竞争——产品力强但定价高，不走"约会伪体香"场景化营销</td><td>价格带不重叠，场景差异化</td></tr>
   </table></div>
 
-  <div class="card-accent">
-    <h4>🏆 标杆案例：小仙炖</h4>
-    <p>在"燕窝"这个几百年老品类里创造了"鲜炖燕窝"新品类——C2M 鲜炖解决"想吃但不想自己炖"。"鲜炖燕窝，就选小仙炖"= 品类 + 品牌绑定。品类占位不是做更好——是<strong>定义这个品类应该是什么。</strong></p>
-    <p style="margin-bottom:0;"><strong>迁移启示：</strong>① 定义品类而非做更好产品 ② 广告语 = 新品名 + 品牌名绑定 ③ 早期渠道聚焦（小仙炖 = 小程序 → 肤生 = 小红书 + 私域）。</p>
-  </div>
-</article>
-
-<article class="module" id="m10">
-  <span class="module-num">Chapter 08</span>
-  <h2>品牌价值画布 + 使命 · 愿景 · 价值观</h2>
-
-  <div class="centered-quote">
-    <h3>"约会前的最后一层。"</h3>
-    <p style="color:var(--ink-light);">为 18–26 岁女生提供不假思索的约会体香选择。</p>
-  </div>
-
-  <div class="card">
-    <h4>品牌使命</h4>
-    <p style="font-size:1.15rem;"><strong>"让每一个女生在约会前，喷香这件事——不需要想。"</strong></p>
-    <p style="color:var(--ink-light);font-size:0.9rem;">品牌消失场景：有肤生时——她喷两下，出门。没肤生时——拿起三支香全放下，那晚第一个小时都在想"我闻起来对吗"。</p>
-  </div>
-
-  <div class="card">
-    <h4>品牌愿景</h4>
-    <p style="font-size:1.15rem;"><strong>"约会最强辅助。"</strong></p>
-    <p>1 年：约会前不知道喷什么 → 喷肤生。3 年：不只喷肤生——还看肤生的约会内容。5 年：约会前第一个想到的品牌。</p>
-  </div>
-
-  <div class="card">
-    <h4>品牌价值观</h4>
-    <div class="table-wrap"><table>
-      <tr><td style="width:50%"><strong>① 她的感受，不是他的偏好</strong><br>一支香好不好，评判标准是她觉得自己怎么样。绝不：做"男生最爱 Top 10"选出来的香；说"他会为你疯狂"。</td><td><strong>② 自信是被提醒的，不是被创造的</strong><br>女生本来就很美——纠结的时候忘了。品牌的作用是提醒。绝不：制造容貌焦虑、暗示"不喷就不够好"。</td></tr>
-    </table></div>
-  </div>
-</article>
-
-<article class="module" id="m12">
-  <span class="module-num">Chapter 09</span>
-  <h2>品牌人格化定义 + 品牌故事</h2>
-
-  <div class="highlight-box">
-    <h4>品牌原型：照顾者 Caregiver</h4>
-    <p>核心特质：关怀 · 守护 · 不抢戏 · 被需要<br>象征元素：双手（托住）、柔和光晕、棉质纹理</p>
-    <p style="margin-bottom:0;">"约会最强辅助"= 照顾者的行为模式——不打输出、不抢 MVP、但关键时刻从不缺席。</p>
-  </div>
-
+  <h3>三层竞品结构</h3>
   <div class="table-wrap"><table>
-    <tr><th>会说 ✨</th><th>绝不会说 ❌</th></tr>
-    <tr><td>"你本来就好闻。"</td><td>"喷了它，全场最香。"</td></tr>
-    <tr><td>"出门吧，你已经准备好了。"</td><td>"男人都逃不过这个味道。"</td></tr>
-    <tr><td>"约会前的最后一层。"</td><td>"约会斩男香，一喷拿下。"</td></tr>
+    <tr><th>层级</th><th>品牌 / 产品</th><th>核心问题</th></tr>
+    <tr><td><strong>直接竞品</strong></td><td>冰希黎 · 浪漫天使、隐衫之欲</td><td>有产品名无品牌，视觉偏甜或平庸，香水感明显——用户用完仍觉得"是喷了香水"</td></tr>
+    <tr><td><strong>间接竞品</strong></td><td>Diptyque 肌肤之花、Le Labo Another 13</td><td>产品力顶尖但定价 1000+，面向沙龙香爱好者，不走大众约会场景</td></tr>
+    <tr><td><strong>替代竞品</strong></td><td>香氛沐浴露、香体止汗膏、香氛身体乳</td><td>"伪体香"概念向个护下沉——用户用个护产品替代香水的趋势明显。肤生的回应：滚珠香氛油 = 比身体乳更持久、比香水更贴肤</td></tr>
   </table></div>
 
-  <div class="card-accent">
-    <h4>品牌故事 · 三段式</h4>
-    <p><strong>初心 My Heart</strong><br>"我是香水博主。每次看到女生买回来的'撩汉伪体香'——拆开、喷上、半小时后——不好闻，也不伪体香。两支都不对。市面上没有。所以我来做。"</p>
-    <p><strong>态度 My Attitude</strong><br>"不讨好男生。不做'他觉得好闻'的香——做'她喷了觉得又松弛又美'的香。评判标准只有一个：她喷完对着镜子，会不会说'可以了，出门。'"</p>
-    <p style="margin-bottom:0;"><strong>承诺 My Promise</strong><br>"一支真正好闻、真正像体香的身体香雾。约会前喷它，你不用想。"</p>
-  </div>
-</article>
-
-<article class="module" id="m14">
-  <span class="module-num">Chapter 10</span>
-  <h2>品牌命名策略</h2>
-
-  <div class="centered-quote">
-    <h3>肤生 SKINBORN</h3>
-    <p style="color:var(--ink-light);">"皮肤自己生出来的味道。不是喷上去的——是长出来的。"</p>
+  <div class="highlight">
+    <p style="margin-bottom:0;"><strong>备注：</strong>肌肤之味主打东方沙龙香，仅单款沾边体香概念——与本品牌无直接竞争关系。</p>
   </div>
 
+  <h3>伪体香流量数据</h3>
   <div class="table-wrap"><table>
-    <tr><th>维度</th><th>评分</th><th>分析</th></tr>
-    <tr><td>核心价值关联</td><td class="stars">★★★★★</td><td>"从皮肤里长出来的味道" = 伪体香终极表达</td></tr>
-    <tr><td>简洁易记</td><td class="stars">★★★★★</td><td>两个字 + 一个词，口播零摩擦</td></tr>
-    <tr><td>差异化创新</td><td class="stars">★★★★★</td><td>香氛行业无品牌叫此名——当代直白造词</td></tr>
-    <tr><td>文化共鸣</td><td class="stars">★★★★☆</td><td>国际感——与 Glossier、Le Labo 并列不违和</td></tr>
-    <tr><td colspan="2"><strong>综合评分</strong></td><td><strong>28 / 30 ✅ 建议保留</strong></td></tr>
+    <tr><th>指标</th><th>数据</th><th>解读</th></tr>
+    <tr><td>小红书话题浏览</td><td>10 亿+（2026）</td><td>概念已被市场验证，用户搜索习惯成熟</td></tr>
+    <tr><td>"约会香"搜索增速</td><td>+97%</td><td>约会场景 = 伪体香最大流量入口</td></tr>
+    <tr><td>品牌占位</td><td>零</td><td>尚无品牌独占"原生肤香"心智</td></tr>
   </table></div>
 </article>
 
-<article class="module" id="m15">
-  <span class="module-num">Chapter 11</span>
-  <h2>广告语创作</h2>
+<div class="section-line"><span>Page 05</span></div>
 
-  <div class="centered-quote">
-    <h3>"约会前的最后一层。"</h3>
-    <p style="color:var(--ink-light);">功能性广告语 · 品类占位型</p>
-  </div>
+<!-- ═══════════ 第5页：核心用户画像 ═══════════ -->
+<article class="page" id="p5">
+  <span class="page-num">Page 05</span>
+  <h2>核心用户画像</h2>
 
-  <p><strong>创作逻辑：</strong>"层"= 身体香雾最精准的品类翻译——不是香水，是皮肤上若有似无的一层薄雾。"约会前"= 场景锚。"最后"= 顺序确定——穿搭好了、妆容好了、最后一层喷肤生。</p>
+  <div class="conclusion-bar-light">目标用户：20–26 岁，一二线城市精致女性。月可支配收入 3000–8000 元。购买动机排序：自我愉悦 ＞ 社交细节加分 ＞ 异性好感。</div>
 
   <div class="table-wrap"><table>
-    <tr><th>类型</th><th>广告语</th><th>适用场景</th></tr>
-    <tr><td>差异性</td><td><strong>"不是香水。是你自己。"</strong></td><td>详情页、包装</td></tr>
-    <tr><td>情感性</td><td><strong>"你本来就好闻。"</strong></td><td>种草、社群</td></tr>
-    <tr><td>行动指令</td><td><strong>"出门前，两下。走了。"</strong></td><td>首单引导、卡片</td></tr>
-  </table></div>
-</article>
-
-<article class="module" id="m16">
-  <span class="module-num">Chapter 12</span>
-  <h2>品牌视觉系统方向</h2>
-
-  <blockquote>
-    <p>"看着它，就像闻到皮肤上刚散开的那层清冷水汽。"</p>
-  </blockquote>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:22%">维度</th><th>方向</th></tr>
-    <tr><td>核心信号</td><td>"不抢戏的守护"——不强刷存在感，但一直在</td></tr>
-    <tr><td>色彩体系</td><td>水雾白 #F5F7FA · 冷调瓷白 #EDF0F4 · 蓝调白 #E8EEF2 · 裸调 #F3EDEA</td></tr>
-    <tr><td>字体</td><td>圆润无衬线体，字重轻、留白大。标题 Avenir Next 类温润几何体</td></tr>
-    <tr><td>瓶身</td><td>公模 + 磨砂软触涂层（摸起来像皮肤）+ 定制陶瓷 / 磨砂金属瓶盖</td></tr>
-    <tr><td>外盒</td><td>水雾白 + 极简字体 + 丝绒凹槽——打开 = 拆礼物</td></tr>
-    <tr><td>影像</td><td>清晨薄雾、浴室蒸汽、皮肤特写——"皮肤在呼吸"的氛围</td></tr>
-    <tr><td>避雷</td><td>❌ 安娜苏式装饰 ❌ 粉甜公主风 ❌ 任何"用力过猛"</td></tr>
+    <tr><th style="width:22%">维度</th><th>画像详情</th></tr>
+    <tr><td><strong>年龄与城市</strong></td><td>20–26 岁，一二线城市（北上广深 + 新一线）</td></tr>
+    <tr><td><strong>月可支配收入</strong></td><td>3000–8000 元。200–300 元香氛 = 轻奢犒赏级别——不需要犹豫的价格，但有品质感知</td></tr>
+    <tr><td><strong>消费行为</strong></td><td>小红书种草→线上购买。64% 偏爱小样试用。对"千人千面"的伪体香概念有认知但多次购买失败。</td></tr>
+    <tr><td><strong>购买动机排序</strong></td><td><strong>① 自我愉悦</strong>（"喷了觉得自己又松弛又美"）＞ <strong>② 社交细节加分</strong>（"约会中隐隐约约的好闻"）＞ <strong>③ 异性好感</strong>（"他闻到了——但觉得是我自己的味道"）</td></tr>
+    <tr><td><strong>核心痛点</strong></td><td>不满市面伪体香的<strong>香水感、化工感</strong>——买了"伪体香"回来，发现还是有"喷了香水"的边界。排斥刻意浓香，追求"天生好闻"的体香质感。</td></tr>
+    <tr><td><strong>关键场景</strong></td><td>约会前最后一步、日常出门前、洗澡后。决策模式：穿搭搞定、妆容搞定——喷香不想再纠结。</td></tr>
   </table></div>
 
-  <h4>四套 LOGO 方向</h4>
-  <div class="table-wrap"><table>
-    <tr><th>方案</th><th>方向</th><th>逻辑</th></tr>
-    <tr><td><strong>A · 图形标（主推）</strong></td><td>水滴 / 雾气扩散的几何图形</td><td>雾滴落在皮肤上的扩散形态。圆形 = 完整 / 不抢戏。留白 ≥ 50%</td></tr>
-    <tr><td>B · 字体标</td><td>手写温度感</td><td>像用手指在水汽玻璃上写字——照顾者不用印刷体</td></tr>
-    <tr><td>C · 组合标</td><td>极简水滴 + 品牌名</td><td>水滴 = 清冷水汽 = 品牌独特嗅觉信号</td></tr>
-    <tr><td><strong>D · 动物 IP</strong></td><td>鹿——温存、优雅、独立</td><td>"可以靠近，但我有自己的森林"——呼应无花果奶感</td></tr>
-  </table></div>
-</article>
-
-<article class="module" id="m17">
-  <span class="module-num">Chapter 13</span>
-  <h2>战略定位总结</h2>
-
-  <div class="table-wrap"><table>
-    <tr><th style="width:25%">要素</th><th>确认内容</th></tr>
-    <tr><td>定位方法</td><td>切割｜品类占位型</td></tr>
-    <tr><td>品牌名</td><td>肤生 SKINBORN（28/30 分）</td></tr>
-    <tr><td>使命</td><td>"让每一个女生在约会前，喷香这件事——不需要想"</td></tr>
-    <tr><td>愿景</td><td>"约会最强辅助"</td></tr>
-    <tr><td>价值观</td><td>① 她的感受不是他的偏好 ② 自信是被提醒的不是被创造的</td></tr>
-    <tr><td>品牌人格</td><td>照顾者 Caregiver</td></tr>
-    <tr><td>广告语</td><td>"约会前的最后一层。"</td></tr>
-    <tr><td>视觉方向</td><td>清冷水汽→贴肤温度；水雾白 + 冷调瓷白 + 极淡裸调；磨砂软触瓶身</td></tr>
-  </table></div>
-
-  <div class="highlight-box highlight-box-warn">
-    <h4>⚠️ 三不原则</h4>
-    <p style="margin-bottom:0;">① <strong>不讨好男生</strong>——出发点变成"他喜欢什么"→否决。② <strong>不制造焦虑</strong>——暗示"不喷就不够好"→否决。③ <strong>不抢主角</strong>——品牌不喊"选我"，安静出现在她需要的那一刻。</p>
+  <div class="highlight">
+    <h4 style="margin-top:0;">核心洞察：女生的"试错困境"</h4>
+    <p>约会前——衣服不能每件都试、口红不能每支都涂。她已经在穿搭和妆容上消耗了决策精力。<strong>喷香这件事，她不想再纠结。</strong>她需要一个"闭眼喷就对了"的默认选项。</p>
+    <p style="margin-bottom:0;"><strong>肤生解决的：在所有需要做决定的时刻里，至少有一件事是确定的。</strong></p>
   </div>
 </article>
 
-<div class="section-divider"><span>Part III · 战略执行篇</span></div>
+<div class="section-line"><span>Page 06</span></div>
 
-<article class="module" id="m18">
-  <span class="module-num">Chapter 14</span>
-  <h2>产品定义</h2>
+<!-- ═══════════ 第6页：运营冷启动策略 ═══════════ -->
+<article class="page" id="p6">
+  <span class="page-num">Page 06</span>
+  <h2>运营冷启动策略</h2>
 
-  <div class="highlight-box">
-    <h4>肤生不是"做一支更好闻的身体香雾"——它是重新定义"约会前女生闻起来应该像什么"。</h4>
-  </div>
+  <div class="conclusion-bar">小红书为核心阵地。"约会伪体香"承接搜索流量 → 逐步传递"原生肤香"品牌内核。内容比例：70% 场景化种草 + 30% 品牌心智内容。</div>
 
+  <h3>内容策略</h3>
   <div class="table-wrap"><table>
-    <tr><th>KANO 类型</th><th>内容</th><th>MVP</th></tr>
-    <tr><td>基本型</td><td>不过敏 · 不黏腻 · 包装完整</td><td>✅</td></tr>
-    <tr><td>期望型</td><td>真 · 伪体香 30 分钟体温测试；清冷水汽→白麝香→无花果奶感三层清晰</td><td>✅</td></tr>
-    <tr><td>兴奋型</td><td>磨砂软触瓶身（摸起来像皮肤）；开箱像拆礼物</td><td>✅</td></tr>
-    <tr><td>无差异型</td><td>多支可选；前中后调说明；精美手册</td><td>❌</td></tr>
-    <tr><td>反向型</td><td>浓郁扩散；过度包装；男凝文案</td><td>❌</td></tr>
+    <tr><th style="width:20%">内容类型</th><th>占比</th><th>目的</th><th>选题方向</th></tr>
+    <tr><td><strong>场景化种草</strong></td><td>70%</td><td>抓搜索流量、促首次购买</td><td>"约会伪体香推荐""第一次约会怎么喷""男朋友说你是不是有体香"——承接小红书搜索量最大的约会香关键词</td></tr>
+    <tr><td><strong>品牌心智内容</strong></td><td>30%</td><td>建品牌认知、促复购与推荐</td><td>"什么是真正的原生肤香""为什么市面伪体香都有香水感""滚珠香氛油和香水的区别"——建立品类教育壁垒</td></tr>
   </table></div>
 
-  <blockquote>
-    <p><strong>一句话产品定义：</strong>"肤生是为约会场景而生的身体香雾——以清冷水汽开场 + 白麝香体温中段 + 无花果奶感收尾的三层叙事，让女生在约会前不必再想'今天闻起来对不对'。"</p>
-  </blockquote>
-</article>
-
-<article class="module" id="m19">
-  <span class="module-num">Chapter 15</span>
-  <h2>核心价值 + 情绪策略 + 定价</h2>
-
-  <h3>三层价值金字塔</h3>
+  <h3>信任螺旋 6 层内容节奏</h3>
   <div class="table-wrap"><table>
-    <tr><th>层级</th><th>内容</th></tr>
-    <tr><td>🔝 社会价值</td><td><strong>"自信是被提醒的"</strong>——肤生代表的不是"变美"，是"想起来自己本来就很美"</td></tr>
-    <tr><td>🎯 情感价值</td><td><strong>"约会前不用想"</strong>——消除决策焦虑；松弛美的嗅觉触发；"他闻到了"= 外部验证</td></tr>
-    <tr><td>📐 功能价值</td><td><strong>真 · 伪体香</strong>——30 分钟后仍像皮肤自己的味道；身体香雾 = 随便喷不出错</td></tr>
+    <tr><th>层级</th><th>时间</th><th>内容方向</th></tr>
+    <tr><td>① 创始人故事</td><td>0–1 月</td><td>"我是香水博主。看你们买回来的伪体香都不对。所以我来做。"</td></tr>
+    <tr><td>② 态度内容</td><td>1–2 月</td><td>"市面伪体香的香水感问题——一支一支拆给你看。"</td></tr>
+    <tr><td>③ 场景种草</td><td>2–3 月</td><td>"约会前不用想的香——是什么样的。"</td></tr>
+    <tr><td>④ 方案呈现</td><td>3–4 月</td><td>"肤生三款。匹配不同约会场景。这就是原生肤香。"</td></tr>
+    <tr><td>⑤ 用户 UGC</td><td>4–6 月</td><td>"她们用了之后——让男朋友自己说。"</td></tr>
+    <tr><td>⑥ 品牌心智</td><td>6 月+</td><td>"肤生 = 原生肤香标准。"</td></tr>
   </table></div>
 
-  <h3>三个情绪峰值</h3>
+  <h3>渠道规划</h3>
   <div class="table-wrap"><table>
-    <tr><th>时刻</th><th style="width:22%">类型</th><th style="width:12%">强度</th></tr>
-    <tr><td>① 开箱——水雾白盒子 + 丝绒内衬</td><td>惊喜时刻</td><td class="stars">★★★★★</td></tr>
-    <tr><td>② 第一次喷——清冷水汽落在皮肤上</td><td>惊喜时刻</td><td class="stars">★★★★★</td></tr>
-    <tr><td>③ 他闻到——"你是不是有体香啊？"</td><td>峰值中的峰值</td><td class="stars">★★★★★★★</td></tr>
+    <tr><th>阶段</th><th>渠道</th><th>动作</th></tr>
+    <tr><td><strong>冷启动期（0–6 月）</strong></td><td>小红书 + 私域</td><td>创始人账号 = 品牌主阵地。私域沉淀首批 100 个种子用户，收集约会反馈→产品迭代。</td></tr>
+    <tr><td><strong>验证跑通后</strong></td><td>天猫 + 抖音</td><td>小红书验证产品力→天猫承接品牌搜索流量→抖音内容扩圈。</td></tr>
   </table></div>
 
-  <h3>定价</h3>
-  <div class="table-wrap"><table>
-    <tr><th>维度</th><th>内容</th></tr>
-    <tr><td>价格带</td><td><strong>200–400 元</strong>——一支大牌香水 1/2 的价格，品质不妥协</td></tr>
-    <tr><td>铁律</td><td>❌ 不打折 ❌ 不做 ¥100 以下 ✅ 9.9 元小样</td></tr>
-    <tr><td>矩阵</td><td>MVP 阶段：<strong>只有一款。0–6 个月不推第二支。</strong></td></tr>
-    <tr><td>案例</td><td><strong>lululemon</strong>——"打折是品牌最贵的营销，它训练用户'等'。"肤生的替代 = 创始人免费内容 + 社群价值。</td></tr>
-  </table></div>
-</article>
+  <h3>创始人 IP 优势</h3>
+  <p>小红书香水博主（~1万粉丝），周更 3 篇零成本。内容能力 = 冷启动最大引擎。品牌内容不单独开号——从个人号自然过渡，粉丝信任→品牌信任无缝衔接。</p>
 
-<article class="module" id="m22">
-  <span class="module-num">Chapter 16</span>
-  <h2>创始人 IP + 内容体系 + 社群 + 年度规划</h2>
-
-  <h3>信任螺旋 6 层</h3>
-  <div class="table-wrap"><table>
-    <tr><th>层</th><th>时间</th><th>内容</th></tr>
-    <tr><td>① 创始人故事</td><td>0–1 月</td><td>"我是香水博主。我忍不了你们被辜负。"</td></tr>
-    <tr><td>② 态度内容</td><td>1–2 月</td><td>"市面上'约会香'的问题——一支一支拆给你看。"</td></tr>
-    <tr><td>③ 场景种草</td><td>2–3 月</td><td>"约会前纠结的时候——有没有想过可以不用想？"</td></tr>
-    <tr><td>④ 方案呈现</td><td>3–4 月</td><td>"我做了这个。试了 17 版。这是成品。"</td></tr>
-    <tr><td>⑤ 用户 UGC</td><td>4–6 月</td><td>"她们喷了之后——让他自己说。"</td></tr>
-    <tr><td>⑥ 社群共创</td><td>6 月+</td><td>"下一支的方向——你来定。"</td></tr>
-  </table></div>
-
-  <h3>社群两阶段</h3>
-  <p><strong>Phase 1（0–3 月）：</strong>100 个梦想赞助商。一对一邀请，共创群非福利群。权益：内测 + 创始人 1v1。<br>
-  <strong>Phase 2（3–9 月）：</strong>核心 50 人→活跃 500 人→小红书公域。标杆：跳海酒馆——社群不是拉群，是设计让用户自愿参与的行为。</p>
-
-  <div class="highlight-box highlight-box-warn">
-    <h4>⚠️ 事件营销：P2 · 跳过</h4>
-    <p style="margin-bottom:0;">&lt;10 万预算，战略性跳过大型事件。保留零成本"3 个 1"：每周 1 次创始人经历 + 行业痛点 + 产品初心。</p>
-  </div>
-
-  <h3>四轮驱动顺序</h3>
-  <pre>创始人IP ██████████████████████████████████████ Day 1 起
-内容体系    ██████████████████████████████████████ 信任螺旋 1→6
-社群建设            ███████████████████████████████ Phase1→2
-事件营销                                    [跳过]</pre>
-
-  <h3>首年预算（&lt;10 万）</h3>
-  <div class="table-wrap"><table>
-    <tr><th>板块</th><th>占比</th><th>估算</th></tr>
-    <tr><td>产品研发 + 打样</td><td>40%</td><td>~4 万</td></tr>
-    <tr><td>包装设计 + 打样</td><td>25%</td><td>~2.5 万</td></tr>
-    <tr><td>首批灌装 100–300 瓶</td><td>20%</td><td>~2 万</td></tr>
-    <tr><td>社群运营 + 机动</td><td>10%</td><td>~1 万</td></tr>
-    <tr><td>内容生产</td><td>5%</td><td>~0.5 万</td></tr>
-  </table></div>
-</article>
-
-<div class="section-divider"><span>Appendix</span></div>
-
-<article class="module" id="m27">
-  <span class="module-num">Chapter 17</span>
-  <h2>关键指标 · 风险 · 行动 · 资源</h2>
-
-  <h3>北极星指标：核心用户 NPS > 50</h3>
-
-  <div class="table-wrap"><table>
-    <tr><th>阶段</th><th>时间</th><th>关键结果</th></tr>
-    <tr><td>冷启动</td><td>0–6 月</td><td>首批 100 瓶 ≤ 30 天售罄；UGC ≥ 20 篇；私域 100 人</td></tr>
-    <tr><td>验证期</td><td>6–12 月</td><td>复购率 > 25%；搜索 UV 月增 > 20%</td></tr>
-    <tr><td>增长期</td><td>12–24 月</td><td>"约会身体香雾"= 肤生 联想 > 50%</td></tr>
-  </table></div>
-
-  <h3>风险应对</h3>
-  <div class="table-wrap"><table>
-    <tr><th>风险</th><th>概率</th><th>应对</th></tr>
-    <tr><td>配方改不到位</td><td>中</td><td>延迟不勉强——产品及格线不退</td></tr>
-    <tr><td>设计师找不到</td><td>中</td><td>极简白瓶 + 标签方案先顶上</td></tr>
-    <tr><td>竞品跟进</td><td>高</td><td>IP 人格壁垒不可复制；不恋战速度</td></tr>
-    <tr><td>供应链不稳</td><td>低中</td><td>标准样本封存；每批对照</td></tr>
-  </table></div>
-
-  <div class="highlight-box highlight-box-green">
-    <h3>P0 · 本周就能做的 3 件事</h3>
-    <p><strong>① 发"我决定做一个品牌"的第一篇小红书。</strong>"每次看你们买回来的伪体香都不对。所以我来做。叫肤生。"</p>
-    <p><strong>② 联系朋友品牌老板。</strong>"大哥，我想做身体香雾，方向想清楚了。工厂资源能介绍不？"</p>
-    <p style="margin-bottom:0;"><strong>③ 在下一篇约会香推荐里埋梗。</strong>"最近在想——要不要自己做一支。叫肤生。你们觉得呢？"</p>
-  </div>
-
-  <h3>推荐资源</h3>
-  <div class="table-wrap"><table>
-    <tr><th>类型</th><th>推荐</th></tr>
-    <tr><td>书籍</td><td>《定位》《从为什么开始》《品牌翻转》</td></tr>
-    <tr><td>播客</td><td>《消费新知》《疯投圈》</td></tr>
-    <tr><td>工具</td><td>小红书蒲公英 · Notion · Canva</td></tr>
-    <tr><td>对标</td><td>Glossier · 观夏 · 三顿半（学思路不抄）</td></tr>
-  </table></div>
-</article>
-
-<article class="module" id="final">
-  <span class="module-num">Finale</span>
-  <h2>巨人的肩膀</h2>
-
-  <div class="card">
-    <h4>史蒂夫 · 乔布斯</h4>
-    <p>"对我来说，营销就是价值观。"——回归 Apple 第一件事不是发产品，是拍"Think Different"。<strong>人们买的不是你做的产品，是你相信的东西。</strong></p>
-    <p><em>给肤生：</em>你不是在卖身体香雾。你卖的是——"你本来就好闻。"</p>
-  </div>
-
-  <div class="card">
-    <h4>段永平</h4>
-    <p>"Stop Doing List 比 To Do List 更重要。"——本分 = 诚信 + 品质 + 消费者导向。不夸大、不忽悠、不赚快钱。</p>
-    <p><em>给肤生：</em>不做"讨好男生的香"——这个 Stop Doing，定义了你是谁。</p>
-  </div>
-
-  <div class="card">
-    <h4>菲利普 · 科特勒</h4>
-    <p>"创业公司最大的资产不是产品、技术或专利——是<strong>对某一群人的需求的深刻理解</strong>。"</p>
-    <p><em>给肤生：</em>你比任何人都更理解——一个女生在约会前站在镜子前犹豫的那一刻。</p>
+  <div class="highlight-warn">
+    <h4 style="margin-top:0;">⚠️ 不做什么</h4>
+    <p style="margin-bottom:0;">不做大型事件营销（预算约束）。不做付费投放（品牌初期聚焦产品 + 内容）。不在冷启动期分散到多平台（小红书一个阵地打透再扩）。</p>
   </div>
 </article>
+
+<div class="section-line"><span>Page 07</span></div>
+
+<!-- ═══════════ 第7页：预算与风险预案 ═══════════ -->
+<article class="page" id="p7">
+  <span class="page-num">Page 07</span>
+  <h2>预算与风险预案</h2>
+
+  <div class="conclusion-bar">启动预算 &lt;10 万。包材占比控制在 15% 以内，优先保障调香品质与首批大货。内容推广成本 ≈ 0。</div>
+
+  <h3>首年预算结构</h3>
+  <div class="table-wrap"><table>
+    <tr><th>板块</th><th>占比</th><th>估算</th><th>说明</th></tr>
+    <tr><td><strong>调香打样 + 配方微调</strong></td><td>30%</td><td>~3 万</td><td>白麝香基底改良 + 三款变奏方向 + 多轮打样。优先保障。</td></tr>
+    <tr><td><strong>首批大货（100–300 支）</strong></td><td>25%</td><td>~2.5 万</td><td>灌装 + 质检 + 基础包装。滚珠瓶公模优先，不开私模。</td></tr>
+    <tr><td><strong>包装设计 + 打样</strong></td><td>15%</td><td>~1.5 万</td><td>外盒设计 + 瓶身定制涂层 + 内衬。成本上限 15%，优先保障调香。</td></tr>
+    <tr><td><strong>化妆品备案 + 检测</strong></td><td>10%</td><td>~1 万</td><td>化妆品备案、微生物检测、安全性评价。合规为底线，不可跳过。</td></tr>
+    <tr><td><strong>平台扣点 + 物流售后</strong></td><td>8%</td><td>~0.8 万</td><td>小红书店铺扣点、快递、售后物料。</td></tr>
+    <tr><td><strong>基础推广 + 试香装</strong></td><td>7%</td><td>~0.7 万</td><td>9.9 元试香装制作。少量小红书信息流测试（可选）。</td></tr>
+    <tr><td><strong>机动预留</strong></td><td>5%</td><td>~0.5 万</td><td>不可预见支出。</td></tr>
+    <tr><td><strong>内容生产</strong></td><td>0%</td><td>0</td><td>创始人自产内容，零成本。</td></tr>
+  </table></div>
+
+  <h3>风险应对预案</h3>
+  <div class="table-wrap"><table>
+    <tr><th>风险</th><th>概率</th><th>影响</th><th>应对</th></tr>
+    <tr><td><strong>配方改不到位</strong>——30 分钟后跑偏，不像体香</td><td>中</td><td>高</td><td>延迟上线，不妥协产品及格线。换调香师 / 基底，以盲测通过为准。</td></tr>
+    <tr><td><strong>竞品快速跟进</strong>——冰希黎等品牌推"原生肤香"产品线</td><td>高</td><td>中</td><td>不恋战速度，比拼品质。"伪体香金标准"= 竞品短期无法复制的产品力壁垒。靠品类心智 + 香型矩阵应对。</td></tr>
+    <tr><td><strong>供应链品质不稳</strong>——不同批次味道不一致</td><td>低中</td><td>高</td><td>建立标准样本封存制度，每批灌装前对照。同时储备 1–2 家备选工厂。</td></tr>
+    <tr><td><strong>化妆品备案延迟</strong>——合规流程超预期</td><td>低</td><td>中</td><td>提前启动备案流程，预留 2–3 个月周期。产品配方冻结后第一时间送检。</td></tr>
+    <tr><td><strong>首批销售不达预期</strong></td><td>中</td><td>中</td><td>回到联名款路径——和朋友品牌合作出联名款降验证成本。Plan B：联名验证→独立品牌延后。</td></tr>
+  </table></div>
+
+  <div class="highlight-green">
+    <h4 style="margin-top:0;">P0 · 本周就能做的 3 件事</h4>
+    <p><strong>① 发"我决定做一个品牌"的第一篇小红书。</strong>真实、不加修饰——"每次看你们买回来的伪体香都不对。所以我来做。叫肤生。"</p>
+    <p><strong>② 联系朋友品牌老板。</strong>"大哥，我想做滚珠香氛油，方向想清楚了。工厂资源能介绍不？"</p>
+    <p style="margin-bottom:0;"><strong>③ 在下一篇约会香推荐里埋梗。</strong>"最近在想——要不要自己做一支。叫肤生。你们觉得呢？"——测用户反应。</p>
+  </div>
+</article>
+
+<div class="section-line"><span>Fin</span></div>
 
 </div>
 
 <footer class="site-footer">
-  <p>肤生 SKINBORN · 品牌全案策略 · 二〇二六年六月</p>
+  <p>肤生 Skinborn · 品牌全案策略 · 二〇二六年六月</p>
   <p>基于《品牌全案策略指南 2.0》方法论</p>
 </footer>
 
